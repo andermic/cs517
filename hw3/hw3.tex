@@ -22,9 +22,19 @@ Collatz function could be:
 
 \begin{verbatim} RETURN YES \end{verbatim}
 
+If during the generation of the Collatz sequence for some $x$, a cycle is
+entered (which would preclude $x$ ever reaching 1),
+then the program could return NO. So
+another possible one-liner (easily implementable as an actual one-liner in a
+language such as Haskell or J) would be:
 
+\begin{verbatim}
+Iterate through the naturals until a Collatz sequence is found for one of them
+ that enters into a cycle, and then return NO.
+\end{verbatim}
 
-
+It turns out that in practice, the amount of time and space required to
+actually get an answer from the above program is very problematic.
 
 \section{}
 collatz.py is attached.
