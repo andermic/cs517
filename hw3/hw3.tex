@@ -16,9 +16,9 @@
 We could argue that since an $n$ has been found for all of the trillions of
 natural numbers already tried, probably no natural number will be found that
 does not map to 1 eventually upon successive applications of the Collatz
-function. Therefore a program that returns an answer to the question: "Do all
+function. Therefore a program that returns an answer to the question: ``Do all
 natural numbers eventually map to 1 upon successive applications of the
-Collatz function could be:
+Collatz function" could be:
 
 \begin{verbatim} RETURN YES \end{verbatim}
 
@@ -33,7 +33,7 @@ Iterate through the naturals until a Collatz sequence is found for one of them
  that enters into a cycle, and then return NO.
 \end{verbatim}
 
-It turns out that in practice, the amount of time and space required to
+It turns out that in practice that the amount of time and space required to
 actually get an answer from the above program is very problematic.
 
 \section{}
@@ -46,7 +46,7 @@ collatz.py is attached.
 \includegraphics[scale=0.5]{col1000000.png}
 
 There are regularities in these plots. Moving from the interval of [1,100] to
-[1,1000000] looks  almost like zooming out on a fractal. Each plot is punctuated
+[1,1000000] looks almost like zooming out on a fractal. Each plot is punctuated
 by a dozen or so rather large spikes, indicating where particular values have
 an especially
 long Collatz sequence. Looking at any particular plot, the size of the spikes
@@ -77,6 +77,6 @@ While an acceptor for $S$ is easy to imagine, we can make no rejector
 $\bar S = \emptyset$. Iff the nature of
 $\bar S$ is discovered, and it is computable, and a way to compute it is
 discovered, then a recognizer for $S$ can be made. Therefore, whether or not
-$S \in Recursive$ is also an open problem.
+$S$ has a recognizer is also an open problem pending further insight.
 
 \end{document}
