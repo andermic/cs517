@@ -1,0 +1,52 @@
+2)
+
+(state)(tape alphabet) -> (dest state)(tape alphabet)(R,S,L)
+(state)(tape alphabet) -> (state)
+
+Must write out symbols that represent tape head position, movement, as well as state. Tape has infinite storage! Easy for finite tape.
+
+3) Do more work with a single instruction.
+
+Suppose we compress the input alphabet of n into a smaller, more compact
+tape alphabet. For example, bit strings could be converted to hex strings.
+Convert the input from bits to hex. Increase the state complexity to handle
+each chunk of bits separately.
+
+Alternatively, use multiple tracks, and some number of tracks to handle each
+bit separately.
+
+Problem: what if there are dependency issues between parts of the
+computation, such that not all of them can be handled in parallel. He "hand-
+waved" this away in class, but it seems to be a valid concern.
+
+4)
+
+E(star) -> power set of all strings over E
+
+|M| -> 
+
+Must relate |M| to all strings over E. M is set of possible states times 
+possible transition functions. Infinite number of possible states as with
+strings. Each state can have |E|^2 * |{R,S,L}| * |Q| possible transitions.
+
+How to encode M in terms of E? Know that there are a countably infinite 
+number of programs.
+
+
+5)
+
+All algebraic numbers are computable. Can use a numerical strategy such as
+Newton's root-finding method to get any number of digits of an algebraic
+number, since Turing machines have potentially infinite tape space.
+
+Not all computable numbers are algebraic! Pi and e are transcendental and
+non-algebraic, but are still computable!
+
+
+6) If S is in recursive than it has a recognizer, and if it has a 
+recognizer then that recognizer can be used to build a strong generator,
+per the generator notes.
+
+Can use the given strong generator to build a recognizer. Simply iterate
+through the naturals for GEN(n). If GEN(n) ever equals the input, return
+YES, if GEN(n) is ever greater than the input, return NO.
