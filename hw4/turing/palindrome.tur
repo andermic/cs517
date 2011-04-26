@@ -1,0 +1,38 @@
+### Outputs YES if string was a palindrome over {a,b}, and NO if not. ###
+
+# Read the leftmost digit and cross it off
+0 a -> 1 _ R
+0 b -> 2 _ R
+0 _ -> YES _ S
+
+# Go to the other side of the string
+1 a -> 1 a R
+1 b -> 1 b R
+1 _ -> 3 _ L
+2 a -> 2 a R
+2 b -> 2 b R
+2 _ -> 4 _ L
+
+# If the rightmost digit matches, continue. Else halt and return NO.
+3 a -> 5 _ L
+3 b -> NO _ L
+3 _ -> YES _ S
+4 a -> NO _ L
+4 b -> 5 _ L
+4 _ -> YES _ S
+
+# Go back to the left side of the string and start over
+5 a -> 5 a L
+5 b -> 5 b L
+5 _ -> 0 _ R
+
+# The output YES subroutine
+YES _ -> YES2 Y R
+YES2 _ -> YES3 E R
+YES3 _ -> HALT S S
+
+# The output NO subroutine
+NO a -> NO _ L
+NO b -> NO _ L
+NO _ -> NO2 N R
+NO2 _ -> HALT O R
