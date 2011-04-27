@@ -16,7 +16,8 @@ for line in lines:
     rules[line[0]][line[1]] = [line[3], line[4], line[5].strip()]
 
 # Initialize tape
-tape = ['_' for i in range(35)]
+TAPE_SIZE = 35
+tape = ['_' for i in range(TAPE_SIZE)]
 input_ = raw_input('Initial input on the tape: ')
 for i in range(len(input_)):
     tape[i+1] = input_[i]
@@ -24,16 +25,18 @@ for i in range(len(input_)):
 choice = ''
 head = 1
 state = '0'
+steps = 0
 # Start the simulation
 while choice != 'R':
     # Show the tape, current state, and all rules'
     system('clear')
     print ' ' * (head * 2) + '*'
-    print ' '.join([tape[i] for i in range(len(tape))])
+    print ' '.join([tape[i] for i in range(TAPE_SIZE)])
     print
     print 'Current state: ' + state
+    print 'Number of steps executed: %d' % steps
     print
-    print 'Rules:'
+    #print 'Rules:'
     #print ''.join(lines)
 
     if state == 'HALT':
@@ -44,6 +47,7 @@ while choice != 'R':
     state = rule[0]
     tape[head] = rule[1]
     head += {'R':1, 'S':0, 'L':-1}[rule[2]]
-    if head < 0 or head > len(tape):
+    if head < 0 or head > TAPE_SIZE - 1:
         print 'Head just moved off the tape'
         exit()
+    steps += 1

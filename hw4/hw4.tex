@@ -13,6 +13,73 @@
 \newpage
 
 \section{}
+I decided to write my own Turing Machine simulator, since it seemed simple
+enough. Code and example Turing Machines are attached. Each line of the
+sample TMs (excepting comments and whitespace of course) is a
+tuple from the machine's transition function in the following order:
+
+\[
+Q_{cur} \quad \Sigma_{cur} \quad \rightarrow \quad Q_{next} \quad \Sigma_{next}
+\quad \{R,S,L\}_{next}
+\]
+
+Following are some sample results from my simulator's text user interface. The
+star in the first line
+indicates the position of the tape head.
+
+\vspace{2em}
+
+\begin{verbatim}
+              *
+_ X X X X X X _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+Current state: HALT
+Number of steps executed: 12
+\end{verbatim}
+
+This very simple Turing Machine is a unary adder. I initialized the tape
+to \textbf{XXX+XXX} in this example.
+
+\vspace{3em}
+
+\begin{verbatim}
+          *
+_ 1 0 1 1 0 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+Current state: HALT
+Number of steps executed: 235
+\end{verbatim}
+
+A binary adder given the input \textbf{1010+1100}.
+
+\vspace{3em}
+
+\begin{verbatim}
+              *
+_ _ _ _ _ N O _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+Current state: HALT
+Number of steps executed: 66
+\end{verbatim}
+
+A palidrome recognizer given the input \textbf{abababbaba}.
+
+\vspace{3em}
+
+\begin{verbatim}
+                            *
+_ 1 0 0 0 , 1 1 0 1 | _ 1 0 0 X + 1 1 0 X 1 _ _ _ _ _ _ _ _ _ _ _ _ _
+
+Current state: 14
+Number of steps executed: 1754
+
+[R]un to end, or [Enter] to step: 
+\end{verbatim}
+
+A base 2 Fibonacci generator with no input given, because it is programmed to
+initialize the tape with \textbf{1,1}. This one does not halt, but we can
+see it is currently in the process of adding 8 and 13 (both visible on the 
+left).
 
 \section{}
 

@@ -1,5 +1,5 @@
-### A very simple unary adder, where X is the unary digit and + is ###
-###  separate the operands. ###
+### A very simple unary adder, where X is the unary digit and + 
+###  separates the operands.
 
 0 X -> 0 X R
 0 + -> 1 X R
