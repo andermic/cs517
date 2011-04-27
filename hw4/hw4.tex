@@ -17,16 +17,123 @@
 \section{}
 
 \section{}
+One way to do this is to compress the input string into a string that uses a
+larger internal working alphabet.
+As an example, suppose that $K = 4$ and $\Sigma = \{0,1\}$. Now let
+$\Gamma = \{0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F\}$, to allow conversion of binary
+input strings into a hexadecimal internal representation. Now instead of taking
+four steps to operate on each group of four bits, take one step to operate on
+each hex digit. For arbitrary values of $K$ and $|\Sigma|$, make
+$|\Gamma| = K^{|\Sigma|}$, so that $K$-strings of symbols in $\Sigma$ can be
+represented as a single symbol in $\Gamma$. 
+
+\vspace{1em}
+
+Modern computer architecture operates in this fashion. Even though we normally
+think of digital data as a series of bits, modern CPUs perform computations on
+32 or 64 bits in parallel, allowing a 32x or 64x speedup for large operands.
+
+\vspace{1em}
+
+In the computer architecture world, this parallelism is accomplished by simply
+having enough hardware to process all of the bits at once. In
+the Turing Machine world, for each symbol in $\Gamma$ create a set of rules
+that is analogous to the all of the computation that would be performed on
+its corresponding $K$-string of $\Sigma$.
 
 \section{}
-First, we have that given an input alphabet $\Sigma$, the size of $\Sigma^*$ is
-the sum of the number of length-0 strings, length-1 strings, length-2 strings,
-and so on, over the elements of $\Sigma$:
+The number of strings over $\Sigma^*$ is a countable infinity. This can be
+demonstrated by simply listing them in some "alphabetical" order, and numbering
+them by this order. For example if $\Sigma = \{a,b\}$, we could have
+$0 \leftrightarrow \epsilon, 1 \leftrightarrow a, 2 \leftrightarrow b,
+3 \leftrightarrow aa, 4 \leftrightarrow ab, 5 \leftrightarrow ba, \ldots$
+
+\vspace{1em}
+
+The number of sets over $\Sigma^*$, however, is an uncountable infinity. Since
+each such set is a subset of
+$\Sigma^*$, there are $2^{\Sigma^*}$ such subsets. By Cantor's Theorem, the
+powerset of a countably infinite set is an uncountably infinite set.
+
+\vspace{1em}
+
+As was demonstrated in class, there are only a countably infinite number of 
+programs, and therefore a countably infinite number of possible Turing Machines.
+Every stored program is stored as a sequence of bits, and any sequence of bits
+can be interpreted as some natural number (with the proviso of prepending a 1
+to resolve the ambiguity of leading zeroes).
+
+\vspace{1em}
+
+Since the number of sets over $\Sigma^*$ is an uncountable infinity, and the
+number of Turing Machines is a countable infinity, by the diagonalization
+argument there exist sets over $\Sigma^*$ which cannot be accepted by a Turing
+Machine.
+
+\section{}
+All algebraic numbers are computable. Numerical algorithms such as bisection and
+Newton's method for root-finding compute the value of the root of any
+polynomial with rational coefficients to any arbitrarily high degree of
+accuracy.
+
+\vspace{1em}
+
+Not all computable numbers are algebraic. Non-algebraic numbers such as $\pi$
+and $e$ (we can say $\pi/4$ or $e/3$ to get them into the interval (0,1)) can be
+represented as convergent series with computable terms, and computed
+to any arbitrarily high degree of accuracy.
+
+\vspace{1em}
+
+Successively applying pairing functions gives us that rational numbers are
+countable, and polynomials with rational coefficients are countable.
+Furthermore, since each polynomial has only a finite number of real roots, the
+real roots of polynomials with rational coefficients are also countable.
+
+\vspace{1em}
+
+From problem (4) there are only a countable number of Turing Machines, and it is
+given that every computable number has a corresponding Turing Machine that
+generates it to any degree of accuracy, so the computable numbers are also
+countable.
+
+\vspace{1em}
+
+Since there are a countably infinite number of both algebraic and computable
+numbers, these sets are the same size.
+
+\section{}
+
+$S$ is in Recursive iff it has a recognizer, so show that a recognizer for $S$
+can be used to make a strong generator $GEN_S(n)$ such that
+$\forall n \hspace{4pt} GEN_S(n) < GEN_S(n + 1)$, and vice versa.
+
+\vspace{1em}
+
+From the notes, given a recognizer for $S$ we can make a monotically increasing
+strong generator by identifying members of $S$ with the recognizer and not
+outputting any previously outputted member of $S$:
 
 \[
-|\Sigma^*| = \sum_0^{\infty} 
+GEN_S(n) = \left\{
+    \begin{array}{l l}
+        n &  \text{if $Rec_S$ = YES and $n \notin \{Gen_S(0),\ldots,Gen_S(n-1)$\}} \\
+        GEN_S(n+1) & \text{otherwise} \\
+    \end{array} \right.
 \]
 
-Second, given an input alphabet $\Sigma$,
+Now given a monotonically increasing strong generator $GEN_S(n)$ for $S$, we can
+build a recognizer $Rec_S(n)$ for $S$ by feeding the natural numbers into 
+$GEN_S$ until we generate a value that is either larger than $n$ or equal to
+$n$:
+
+\begin{verbatim}
+RecS(n)
+    FOR EACH i in {0,1,2,3,...}
+        IF GenS(i) = n
+            RETURN(YES)
+        IF GenS(i) > n
+            RETURN(NO)
+\end{verbatim}
 
 \end{document}

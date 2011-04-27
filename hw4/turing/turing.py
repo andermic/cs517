@@ -33,7 +33,8 @@ while choice != 'R':
     print
     print 'Current state: ' + state
     print
-    print ''.join(lines)
+    print 'Rules:'
+    #print ''.join(lines)
 
     if state == 'HALT':
         break
