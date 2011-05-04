@@ -1,0 +1,39 @@
+How to subdivide this project?
+    Four people write sections, fifth person writes intro/conclusion
+     and ties stuff together.
+
+    Intro/Motivation/Background:
+        Currently a young and hot area of research.
+        Previous work and current state of the art at a high level of
+         abstraction.
+    Possible sections:
+        1. Theory of DNA Computation
+            Technical details of implementing a Turing Machine w/ DNA.
+            Unlike w/ quantum computing, DNA computing offers no opportunity
+             to move any problems from some complexity class to an easier class
+             (e.g. problems that are NP-Complete on a classical computer are not
+             in P on a DNA computer).
+        2. How practical is DNA computation?
+            Is it fast?
+            Is it as cost-effectuve to streamline and mass manufacture as
+             classical computers?
+            Is DNA computation energy efficient?
+            How well does DNA memory work. Is it scalable?
+        3. What could DNA computers offer in the future that regular computers
+           cannot?
+            Exploits massive parallelization.
+            Possibility for ultra high density storage media.
+            Low power consumption
+        4. Possible applications to chemical circuitry for interacting with
+            biological models. Molecular robotics. Nanoscale computing.
+            Cancer diagnosis.
+        5. Are there already simulators for DNA computation available? If
+            there are, would it be feasible for us to run a demonstration on
+            one? Would it be feasible for us to make such a simulator?
+    Conclusion
+        Future work
+
+Resources
+    Wiki
+        DNA computing
+        DNA code construction

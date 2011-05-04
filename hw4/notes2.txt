@@ -1,0 +1,22 @@
+Have transition function (Lamdba) -> (Lambda) x (Movement or Write)
+
+Make (Lambda) = (Sigma) x (Q) in quintuple
+
+Reading the tape tells me what state I'm in, along with the Sigma.
+
+
+
+Have Q x Sigma -> Action
+
+Where action is one of: change state, write symbol, move.
+
+1. Read symbol on tape -> write encoded symbol to write on tape, and next state, and movement.
+
+2. Read encoded symbol -> Transition to q_(write symbol, movement)
+
+3. Read encoded symbol in q', since it contains q' ... -> Write encoded
+symbol for write symbol and movement
+
+4. Read encoded symbol -> output write symbol
+
+5. Read write symbol -> move accordingly
