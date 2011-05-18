@@ -1,0 +1,52 @@
+1. Adleman, Leonard. Molecular computation of solutions to
+combinatorial problems. Science, 266:1021-1024, 1994.
+
+2. Adleman, Leonard. Computing with DNA. Scientific American. August,
+1998.
+
+3. Bennet, Charles and Rolf Landauer. The Fundamental Physical Limits
+of Computation. Scientific American. 253:48-56, July 1985.
+
+4. Lodish, et al. Molecular Cell Biology, 4th Ed. W.H. Freeman. 2000.
+
+5. Watson, James and Francis Crick. Molecular Structure of Nucleic
+Acids. Nature. 171:737-738. April, 1953.
+
+6. Wilhelm, Paul and Karl Rothemund. A DNA and restriction enzyme
+implementation of Turing Machines.
+
+7. Winfree, Erik. On the Computational Power of DNA Annealing and
+Ligation. Princeton DIMACS Technical Report. 1995.
+
+[1] Qian, Lulu, David Soloveichik, and Erik Winfree. 2010. Efficient
+turing-universal computation with DNA polymers. In Proceedings of the
+16th international conference on DNA computing and molecular
+programming (DNA'10), Yasubumi Sakakibara and Yongli Mi (Eds.).
+Springer-Verlag, Berlin, Heidelberg, 123-140.
+
+[2] Minsky, M.L.: Computation: finite and infinite machines. Prentice-
+Hall, Englewood Cliffs (1967)
+
+[1] Winfree, Erik: Algorithmic Self-Assembly of DNA. PhD thesis, California Institute
+of Technology, Pasadena (1998)
+
+[2] Chen, H and Kao, M: Optimizing Tile Concentrations to Minimize Errors and Time for DNA Tile Self-assembly Systems, DNA (2011)
+
+[3] Boneh, D., Dunworth, C. Lipton, R. Sgall, J. “Making DNA computers error resistant”. Proceedings of the 2nd annual Meeting of DNA Based Computers, p. 102-110, Princeton, 1996.
+
+[4] Chen, H.-L., Goel,  A.: Error free  self-assembly using error prone tiles. In: Proceedings of the 10th International Meeting on DNA Based Computers, pp. 62–75
+(2004)
+
+1. Adleman, Leonard. Molecular computation of solutions to
+combinatorial problems. Science, 266:1021-1024, 1994.
+
+2. Shapiro, Ehud and Yaakov Benenson. Bringing DNA Computers to Life.
+Scientific American. 2006.
+
+3. Parker, Jack. Computing with DNA. European Molecular Biology
+Organization Reports, 4:7-11, 2003.
+
+4. Kari, Lila. DNA computing in vitro and in vivo, Future Generation
+Computer Systems, 17:823-834, 2001.
+
+5. Drew, Robb. Top500 Supercomputing List Reveals Computing Trends, 2010.

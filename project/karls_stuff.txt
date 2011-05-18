@@ -1,0 +1,80 @@
+Biology of DNA Computing
+
+The current model of DNA computing was first put forth by Leonard
+Adleman in an article he published in "Science" in 1994. While
+researchers such as Charles Bennet and Rolf Landauer had been
+considering the physical limitations of transistor-based computers and
+possible alternatives (including DNA) much earlier, Adleman was the
+first to bring more recent biological discoveries together into a
+working model [2].
+
+Adleman's model was fundamentally based on the properties of DNA
+polymerase, an enzyme critical in the process of DNA replication. When
+put in contact with a strand of DNA in solution, DNA polymerase will
+produce a second strand with a different structure in which each of
+the bases is replaced by its Watson-Crick complement -- [5]. When two
+complementary strands come into contact, they anneal, forming hydrogen
+bonds at each of the matching pairs [7]. Adleman compared this process
+to the function of a Turing machine, reading bases from a tape and
+writing their respective complements into the output [2].
+
+Adleman also saw a computational use for DNA nucleases and ligases,
+enzymes which cut a strand at a predetermined sequence and covalently
+bond two strands into a single, longer strand respectively [1].
+
+DNA molecules in a gel solution can be forced to undergo a type of
+sorting operation, in which longer strands are separated from shorter
+ones. This is done through gel electrophoresis, a technique in which
+current is applied to the solution and the negatively charged DNA
+molecules move toward the electrode. Shorter strands move more quickly
+than longer strands, and thus sort themselves by size [4].
+
+Adleman then demonstrated the ability to solve combinatorial problems
+with these principles and techniques, using the Hamiltonian path
+problem as an example. He first carefully designed the problem,
+assigning a DNA sequence comprised of two parts to each node in the
+graph, as well as a sequence for each existing edge made up of the
+second part of the origin node sequence and the first part of the
+destination node sequence concatenated together [1].
+
+The next step was simply to synthesize DNA molecules from the edge
+sequences and the complements of the node sequences. This allowed the
+edge molecules to join with their assigned connected nodes at the
+complementary section, and eventually construct longer, more complex
+strands through repeated bonding. This generated DNA molecules
+representing all the possible paths through the graph [1].
+
+Using the two short DNA primer strands representing the start and end
+nodes, Adleman was able to create a controlled polymerase chain
+reaction which produced copies of strands with correct start and end
+points exponentially fast, while ignoring the incorrect strands [2].
+
+Through a series of separation procedures, Adleman was able to extract
+only those strands which passed through each node on the graph, and
+was able to determine both if a Hamiltonian path existed (if any DNA
+molecules are remaining) and which is the shortest through the use of
+gel electrophoresis [1].
+
+This or a similar process can theoretically
+represent any Turing machine, and solve any Turing-computable problem
+given enough of the restriction enzymes [6].
+
+1. Adleman, Leonard. Molecular computation of solutions to
+combinatorial problems. Science, 266:1021-1024, 1994.
+
+2. Adleman, Leonard. Computing with DNA. Scientific American. August,
+1998.
+
+3. Bennet, Charles and Rolf Landauer. The Fundamental Physical Limits
+of Computation. Scientific American. 253:48-56, July 1985.
+
+4. Lodish, et al. Molecular Cell Biology, 4th Ed. W.H. Freeman. 2000.
+
+5. Watson, James and Francis Crick. Molecular Structure of Nucleic
+Acids. Nature. 171:737-738. April, 1953.
+
+6. Wilhelm, Paul and Karl Rothemund. A DNA and restriction enzyme
+implementation of Turing Machines.
+
+7. Winfree, Erik. On the Computational Power of DNA Annealing and
+Ligation. Princeton DIMACS Technical Report. 1995.

@@ -1,0 +1,58 @@
+Although the field is still in it's infancy, there have already been
+impressive breakthroughs demonstrating applications of DNA computers.
+Two obvious advantages of DNA computing are it's massive parallelism
+and extremely dense storage capacity. While the potential is great,
+there are major hurdles that need to be overcome if DNA computing will
+ever become feasible.
+
+Beginning with Adleman's experiment to solve a 7 city travelling
+salesperson problem (TSP) [1], researchers have continued to find new
+methods and uses for DNA computing. Shapiro and Beninson have produced
+a DNA automaton which detects cancerous cells and can release a drug
+when an infected cell is found [2]. Although this experiment was only
+performed in a test tube, the next goal is living cells. Eric Winfree
+has developed a method for building “molecular tiles” which could
+allow for complex self-assembling molecular structures [3]. This would
+be a major advancement for areas like nanotechnology.
+
+The sheer computational advantage of DNA computing is easy to see,
+Adleman's TSP experiment ran at the equivalent of 100 Teraflops [3].
+This processing speed comes from the parallelism inherent in DNA
+computing, the speed is proportional to the number of DNA molecules
+present. As a storage medium, DNA is very dense and capable of storing
+massive amounts of data. As an example, 1μmol of DNA in 1L of water
+contains 10^18 strands of DNA and each strand has a length of 40 which
+can encode 10 bytes [4]. This means 1L of solution has the potential
+to store around 8.7 exabytes. Some problems are still not easily
+solvable even with seemingly boundless computing power and memory. If
+Adleman's experiment was scaled up to 200 cities, it is estimated the
+weight of the DNA required to represent all possible routes would be
+more than the earth [3]. Another problem is obtaining the output of
+the computations, it took Adleman a week to extract the solution to
+his TSP experiment [3].
+
+The power efficiency of DNA computers is also leaps ahead of current
+technology. IBM's recent Blue Gene supercomputer which is considered
+to be highly efficient runs at 1684 megaFLOPS/watt [5]. It was
+estimated by Adleman that a DNA based computer could achieve 20
+petaFLOPS/watt [4].
+
+There are trade-offs for both DNA computers and current silicon-based
+systems. As a general computing platform, the consensus is that DNA
+computers will never directly replace silicon-based systems [3]. Amos
+suggests we shouldn't be looking at the two as competitors but we
+should be “looking outside the box for a niche for other applications”
+[3]. Because DNA computers speak the language of living cells, they
+can accomplish tasks that silicon systems will never be able to. It is
+envisaged that DNA computers will act more as a complement, rather
+than a replacement to classical computing [4].
+
+1. Adleman, Leonard. Molecular computation of solutions to
+combinatorial problems. Science, 266:1021-1024, 1994.
+2. Shapiro, Ehud and Yaakov Benenson. Bringing DNA Computers to Life.
+Scientific American. 2006.
+3. Parker, Jack. Computing with DNA. European Molecular Biology
+Organization Reports, 4:7-11, 2003.
+4. Kari, Lila. DNA computing in vitro and in vivo, Future Generation
+Computer Systems, 17:823-834, 2001.
+5. Drew, Robb. Top500 Supercomputing List Reveals Computing Trends, 2010.

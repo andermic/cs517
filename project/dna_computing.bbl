@@ -1,0 +1,99 @@
+\begin{thebibliography}{10}
+
+\bibitem{adleman_94}
+Leonard Adleman.
+\newblock Molecular computation of solutions to combinatorial problems.
+\newblock {\em Science}, 266:1021--1024, 1994.
+
+\bibitem{adleman_98}
+Leonard Adleman.
+\newblock Computing with \text{DNA}.
+\newblock {\em Scientific American}, August 1998.
+
+\bibitem{bennett}
+Charles Bennett and Rolf Landauer.
+\newblock The fundamental physical limits of computation.
+\newblock {\em Scientific American}, 253:48--56, July 1985.
+
+\bibitem{boneh}
+D.~Boneh and all.
+\newblock Making \text{DNA} computers error resistant.
+\newblock In {\em 2nd annual Meeting of DNA Based Computers}, pages 102--110,
+  Princeton, 1996.
+
+\bibitem{chen_04}
+H.~Chen and A.~Goel.
+\newblock Error free self-assembly using error prone tiles.
+\newblock In {\em 10th International Meeting on DNA Based Computers}, pages
+  62--75, 2004.
+
+\bibitem{chen}
+H.~Chen and M.~Kao.
+\newblock Optimizing tile concentrations to minimize errors and time for
+  \text{DNA} tile self-assembly systems.
+\newblock In Yasubumi Sakakibara and Yongli Mi, editors, {\em 16th
+  International Conference on DNA Computing and Molecular Programming}, 2010.
+
+\bibitem{drew}
+Robb Drew.
+\newblock Top 500 supercomputing list reveals computing trends, 2010.
+
+\bibitem{kari}
+Lila Kari.
+\newblock \text{DNA} computing in vitro and in vivo.
+\newblock {\em Future Generation Computer Systems}, 17:823--834, 2001.
+
+\bibitem{lodesh}
+Lodesh and all.
+\newblock {\em Molecular Cell Biology}.
+\newblock W.H. Freeman, 4th edition, 2000.
+
+\bibitem{minsky}
+Marvin Minsky.
+\newblock {\em Computation: Finite and Infinite Machines}.
+\newblock Prentice Hall, Englewood Cliffs, 1967.
+
+\bibitem{parker}
+Jack Parker.
+\newblock Computing with \text{DNA}.
+\newblock {\em European Molecular Biology Organization Reports}, 4:7--11, 2003.
+
+\bibitem{qian}
+Lulu Qian, David Soloveichik, and Erik Winfree.
+\newblock Efficient turing-universal computation with \text{DNA} polymers.
+\newblock In Yasubumi Sakakibara and Yongli Mi, editors, {\em 16th
+  International Conference on DNA Computing and Molecular Programming}, pages
+  124--140, 2010.
+
+\bibitem{rama}
+R.M. Ramanathan and Rob Willoner.
+\newblock Silicon innovation: Leaping from 90nm to 65 nm.
+\newblock White paper, Intel Corporation, 2006.
+
+\bibitem{shapiro}
+Ehud Shapiro and Yaakov Benenson.
+\newblock Bringing \text{DNA} computers to life.
+\newblock {\em Scientific American}, August 2006.
+
+\bibitem{watson}
+James Watson and Francis Crick.
+\newblock Molecular structure of nucleic acids.
+\newblock {\em Nature}, 171:737--738, April 1953.
+
+\bibitem{wilhelm}
+Paul Wilhelm and Karl Rothemond.
+\newblock A \text{DNA} and restriction enzyme implementation of turing
+  machines.
+
+\bibitem{winfree_95}
+Erik Winfree.
+\newblock On the computational power of \text{DNA} annealing and ligation,
+  1995.
+\newblock Princeton DIMACS Technical Report.
+
+\bibitem{winfree_98}
+Erik Winfree.
+\newblock {\em Algorithmic Self-Assembly of DNA}.
+\newblock PhD thesis, California Institute of Technology, 1998.
+
+\end{thebibliography}

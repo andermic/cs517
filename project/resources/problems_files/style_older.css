@@ -1,0 +1,510 @@
+BODY, P, TR, TD, TD {
+	font-family:Verdana,Arial,Helvetica,sans-serif;
+	font-size: small;
+	color:#000000;
+	font-weight:normal;
+}
+
+.bodyblack {
+	font-family:Verdana,Arial,Helvetica,sans-serif;
+	font-size:small;
+	color: #000000;
+	font-weight:normal;
+}
+.dkred {font-family:Verdana,Arial,Helvetica,sans-serif;font-size:small;color:#9B0909;font-weight:normal;}
+.bold {font-family:Verdana,Arial,Helvetica,sans-serif;font-size:small;color:#000000;font-weight:bold;}
+.small{font-family:Verdana,Arial,Helvetica,sans-serif;font-size:x-small;color:#000000;font-weight:normal;}
+
+/* the Green search text in banner */
+.topsearch{font-family:Verdana,Arial,Helvetica,sans-serif;font-size:12px;color:#009933;font-weight:bold;}
+input.topsearch {font-family:Verdana,Arial,Helvetica,sans-serif;font-size:10px;color:#000000;width:100px;font-weight:normal;border-color:#CCCCCC}
+
+/* Headings -1*/
+.h1red{
+	font-family:Verdana,Arial,Helvetica,sans-serif;
+	font-size: medium;
+	color: #CC3300;
+	font-weight:bold;
+	text-decoration:none;
+}
+.h1black{
+	font-family:Verdana,Arial,Helvetica,sans-serif;
+	font-size: medium;
+	color:#000000;
+	font-weight:bold;
+	text-decoration:none;
+}
+
+/* Basic Links */
+A  {color:#009933;}
+A:visited {color:#006633;}
+A:hover {color:#CC3333;}
+
+/*  Dark Grey Links- Used in popup headers */
+A.dkgreylgebold{
+	font-family:Verdana,Arial,Helvetica,sans-serif;
+	font-size: medium;
+	color:#333333;
+	font-weight:bold;
+	text-decoration:none
+}
+A.dkgreylgebold:visited{
+	font-family:Verdana,Arial,Helvetica,sans-serif;
+	font-size: medium;
+	color:#333333;
+	font-weight:bold;
+	text-decoration:none
+}
+A.dkgreylgebold:hover{
+	font-family:Verdana,Arial,Helvetica,sans-serif;
+	font-size: medium;
+	color:#CC3300;
+	font-weight:bold;
+	text-decoration:none
+}
+
+/* Left hand Navigation Links */
+/* First Level - Journal Home*/
+A.navhomeOn {font-family:Verdana,Arial,Helvetica,sans-serif;font-size:12px;color:#FFFFFF;font-weight:bold;text-decoration:none;line-height: 13px}
+A.navhomeOn:visited {font-family:Verdana,Arial,Helvetica,sans-serif;font-size:12px;color:#FFFFFF;font-weight:bold;text-decoration:none;line-height: 13px}
+A.navhomeOn:hover {font-family:Verdana,Arial,Helvetica,sans-serif;font-size:12px;color:#CC3300;font-weight:bold;text-decoration:none;padding-top:1px;padding-bottom : 2px;}
+
+A.navhomeOff {font-family:Verdana,Arial,Helvetica,sans-serif;font-size:12px;color:#333333;font-weight:bold;text-decoration:none;padding-top:1px;padding-bottom:2px;}
+A.navhomeOff:visited {font-family:Verdana,Arial,Helvetica,sans-serif;font-size:12px;color:#333333;font-weight:bold;text-decoration:none;padding-top:1px;padding-bottom:2px;}
+A.navhomeOff:hover {font-family:Verdana,Arial,Helvetica,sans-serif;font-size:12px;color:#CC3300;font-weight:bold;text-decoration:none;padding-top:1px;padding-bottom : 2px;}
+
+/* Second Level - Unlinked - Authors &Refs  ect*/
+.navautOff {font-family:Verdana,Arial,Helvetica,sans-serif;font-size:11px;color:#000000;font-weight:bold;text-decoration:none;padding-top:1px;padding-bottom:2px;}
+.navautOn {font-family:Verdana,Arial,Helvetica,sans-serif;font-size:11px;color:#FFFFFF;font-weight:bold;text-decoration:none;padding-top:1px;padding-bottom:2px;}
+
+/* Second Level - Current Issue AOP Archive ect*/
+A.nav1On {font-family:Verdana,Arial,Helvetica,sans-serif;font-size:11px;color:#FFFFFF;font-weight:bold;text-decoration:none;}
+A.nav1On:visited {font-family:Verdana,Arial,Helvetica,sans-serif;font-size:11px;color:#FFFFFF;font-weight:bold;text-decoration:none;}
+A.nav1On:hover {font-family:Verdana,Arial,Helvetica,sans-serif;font-size:11px;color:#CC3300;font-weight:bold;text-decoration:none;}
+A.nav1Off {font-family:Verdana,Arial,Helvetica,sans-serif;font-size:11px;color:#666666;font-weight:bold;text-decoration:none;}
+A.nav1Off:visited {font-family:Verdana,Arial,Helvetica,sans-serif;font-size:11px;color:#666666;font-weight:bold;text-decoration:none;}
+A.nav1Off:hover {font-family:Verdana,Arial,Helvetica,sans-serif;font-size:11px;color:#CC3300;font-weight:bold;text-decoration:none;}
+
+/* Second Level - Unlinked - Authors &Refs  ect*/
+.nav1Off {font-family:Verdana,Arial,Helvetica,sans-serif;font-size:11px;color:#000000;font-weight:bold;text-decoration:none;padding-top:1px;padding-bottom:2px;}
+.nav1On {font-family:Verdana,Arial,Helvetica,sans-serif;font-size:11px;color:#FFFFFF;font-weight:bold;text-decoration:none;padding-top:1px;padding-bottom:2px;}
+
+
+/* Third Level - Coloured Sections*/
+A.nav3On {font-family:Verdana,Arial,Helvetica,sans-serif;font-size:10px;color:#FFFFFF;font-weight:bold;text-decoration:none}
+A.nav3On:visited {font-family:Verdana,Arial,Helvetica,sans-serif;font-size:10px;color:#FFFFFF;font-weight:bold;text-decoration:none}
+A.nav3On:hover {font-family:Verdana,Arial,Helvetica,sans-serif;font-size:10px; color:#9B0909; font-weight:bold; text-decoration:none}
+
+A.navEditorial {font-family:Verdana,Arial,Helvetica,sans-serif;font-size:10px;color:#000000;font-weight:bold;text-decoration:none;}
+A.navEditorial:visited {font-family:Verdana,Arial,Helvetica,sans-serif;font-size:10px;color:#000000;font-weight:bold;text-decoration:none;}
+A.navEditorial:hover {font-family:Verdana,Arial,Helvetica,sans-serif;font-size:10px; color:#CC3300; font-weight:bold; text-decoration:none;}
+
+A.navScience {font-family:Verdana,Arial,Helvetica,sans-serif;font-size:10px;color:#CC3300;font-weight:bold;text-decoration:none}
+A.navScience:visited {font-family:Verdana,Arial,Helvetica,sans-serif;font-size:10px;color:#CC3300;font-weight:bold;text-decoration:none;}
+A.navScience:hover {font-family:Verdana,Arial,Helvetica,sans-serif;font-size:10px; color:#9B0909; font-weight:bold; text-decoration:none;}
+
+A.navReviews {font-family:Verdana,Arial,Helvetica,sans-serif;font-size:10px;color:#003399;font-weight:bold;text-decoration:none;}
+A.navReviews:visited {font-family:Verdana,Arial,Helvetica,sans-serif;font-size:10px;color:#003399;font-weight:bold;text-decoration:none}
+A.navReviews:hover {font-family:Verdana,Arial,Helvetica,sans-serif;font-size:10px; color:#CC3300; font-weight:bold; text-decoration:none;}
+
+A.navScientific {font-family:Verdana,Arial,Helvetica,sans-serif;font-size:10px;color:#009933;font-weight:bold;text-decoration:none;}
+A.navScientific:visited {font-family:Verdana,Arial,Helvetica,sans-serif;font-size:10px;color:#009933;font-weight:bold;text-decoration:none;}
+A.navScientific:hover {font-family:Verdana,Arial,Helvetica,sans-serif;font-size:10px; color:#CC3300; font-weight:bold; text-decoration:none}
+
+A.navAOP {font-family:Verdana,Arial,Helvetica,sans-serif;font-size:10px;color:#666666;font-weight:bold;text-decoration:none;}
+A.navAOP:visited {font-family:Verdana,Arial,Helvetica,sans-serif;font-size:10px;color:#666666;font-weight:bold;text-decoration:none;}
+A.navAOP:hover {font-family:Verdana,Arial,Helvetica,sans-serif;font-size:10px; color:#CC3300; font-weight:bold; text-decoration:none;}
+
+
+/* Third Level - Small Black Sections*/
+A.navsml {font-family:Verdana,Arial,Helvetica,sans-serif;font-size:10px;color:#333333;font-weight:normal;text-decoration:none;}
+A.navsml:visited {font-family:Verdana,Arial,Helvetica,sans-serif;font-size:10px; color:#333333; font-weight:normal; text-decoration:none;}
+A.navsml:hover {font-family:Verdana,Arial,Helvetica,sans-serif;font-size:10px; color:#CC3300; font-weight:normal; text-decoration:none;}
+
+/* Normal Black Links - 10 px No underline*/
+A.black {font-family:Verdana,Arial,Helvetica,sans-serif;font-size:10px;color:#000000;font-weight:normal;text-decoration:none;}
+A.black:visited{font-family:Verdana,Arial,Helvetica,sans-serif;font-size:10px;color:#000000;font-weight:normal;text-decoration:none;}
+A.black:hover{font-family:Verdana,Arial,Helvetica,sans-serif;font-size:10px;color:#CC3333;font-weight:normal;text-decoration:none;}
+
+
+/* Bold Black Links - 10px No underline*/
+A.blackbold{font-family:Verdana,Arial,Helvetica,sans-serif;font-size:10px;color:#000000;font-weight:bold;text-decoration:none;}
+A.blackbold:visited{font-family:Verdana,Arial,Helvetica,sans-serif;font-size:10px;color:#000000;font-weight:bold;text-decoration:none;}
+A.blackbold:hover{font-family:Verdana,Arial,Helvetica,sans-serif;font-size:10px;color:#CC3333;font-weight:bold;text-decoration:none;}
+
+/* Contents Black Italicised Links -Percentage*/
+A.blackitalic {font-family:Verdana,Arial,Helvetica,sans-serif;font-size:small;font-style:italic;color:#000000;font-weight:normal;text-decoration:none;}
+A.blackitalic:visited{font-family:Verdana,Arial,Helvetica,sans-serif;font-size:small;font-style:italic;color:#666666;font-weight:normal;text-decoration:none;}
+A.blackitalic:hover{font-family:Verdana,Arial,Helvetica,sans-serif;font-size:small;font-style:italic;color:#CC3300;font-weight:normal;text-decoration:none;}
+
+/* Large Black Links - Percentage*/
+A.blacklge{
+	font-family:Verdana,Arial,Helvetica,sans-serif;
+	font-size: medium;
+	color:#000000;
+	font-weight:bold;
+	text-decoration:none;
+}
+A.blacklge:visited{
+	font-family:Verdana,Arial,Helvetica,sans-serif;
+	font-size: medium;
+	color:#000000;
+	font-weight:bold;
+	text-decoration:none;
+}
+A.blacklge:hover{
+	font-family:Verdana,Arial,Helvetica,sans-serif;
+	font-size: medium;
+	color:#CC3333;
+	font-weight:bold;
+	text-decoration:none;
+}
+
+/* Normal White Links - No underline*/
+A.white {font-family:Verdana,Arial,Helvetica,sans-serif;font-size:11px;color:#FFFFFF;font-weight:normal;text-decoration:none;}
+A.white:visited{font-family:Verdana,Arial,Helvetica,sans-serif;font-size:11px;color:#FFFFFF;font-weight:normal;text-decoration:none;}
+A.white:hover{font-family:Verdana,Arial,Helvetica,sans-serif;font-size:11px;color:#FFFFFF;font-weight:normal;text-decoration:none;}
+
+
+/* Big White Link*/
+A.whitebig{font-family:Verdana,Arial,Helvetica,sans-serif;font-size:12px;color:#FFFFFF;font-weight:bold;text-decoration:none;}
+A.whitebig:visited{font-family:Verdana,Arial,Helvetica,sans-serif;font-size:12px;color:#FFFFFF;font-weight:bold;text-decoration:none;}
+A.whitebig:hover{font-family:Verdana,Arial,Helvetica,sans-serif;font-size:12px;color:#CC3333;font-weight:bold;text-decoration:none;}
+
+
+/* Small Red Links*/
+A.redsml{font-family:Verdana,Arial,Helvetica,sans-serif;font-size:10px;color:#CC3300;font-weight:normal;text-decoration:none;}
+A.redsml:visited{font-family:Verdana,Arial,Helvetica,sans-serif;font-size:10px;color:#990000;font-weight:normal;text-decoration:none;}
+A.redsml:hover{font-family:Verdana,Arial,Helvetica,sans-serif;font-size:10px;color:#FF0000;font-weight:normal;text-decoration:none;}
+
+/* Large Red Links -Percentage*/
+A.redlge{
+	font-family:Verdana,Arial,Helvetica,sans-serif;
+	font-size: medium;
+	color:#CC3300;
+	font-weight:bold;
+	text-decoration:none;
+}
+A.redlge:visited{
+	font-family:Verdana,Arial,Helvetica,sans-serif;
+	font-size: medium;
+	color:#990000;
+	font-weight:bold;
+	text-decoration:none;
+}
+A.redlge:hover{
+	font-family:Verdana,Arial,Helvetica,sans-serif;
+	font-size: medium;
+	color:#FF0000;
+	font-weight:bold;
+	text-decoration:none;
+}
+
+
+/* Small Blue Links*/
+A.bluesml{font-family:Verdana,Arial,Helvetica,sans-serif;font-size:10px;color:#003399;font-weight:normal;text-decoration:none;}
+A.bluesml:visited{font-family:Verdana,Arial,Helvetica,sans-serif;font-size:10px;color:#000066;font-weight:normal;text-decoration:none;}
+A.bluesml:hover{font-family:Verdana,Arial,Helvetica,sans-serif;font-size:10px;color:#CC3333;font-weight:normal;text-decoration:none;}
+
+/* Large Blue Links -Percentage*/
+A.bluelge{
+	font-family:Verdana,Arial,Helvetica,sans-serif;
+	font-size: medium;
+	color:#003399;
+	font-weight:bold;
+	text-decoration:none;
+}
+A.bluelge:visited{
+	font-family:Verdana,Arial,Helvetica,sans-serif;
+	font-size: medium;
+	color:#000066;
+	font-weight:bold;
+	text-decoration:none
+}
+A.bluelge:hover{
+	font-family:Verdana,Arial,Helvetica,sans-serif;
+	font-size: medium;
+	color:#CC3300;
+	font-weight:bold;
+	text-decoration:none;
+}
+
+
+/* Small Green Links*/
+A.greensml{font-family:Verdana,Arial,Helvetica,sans-serif;font-size:10px;color:#009933;font-weight:normal;text-decoration:none;}
+A.greensml:visited{font-family:Verdana,Arial,Helvetica,sans-serif;font-size:10px;color:#006633;font-weight:normal;text-decoration:none;}
+A.greensml:hover{font-family:Verdana,Arial,Helvetica,sans-serif;font-size:10px;color:#CC3333;font-weight:normal;text-decoration:none;}
+
+/* Large Green Links -Percentage*/
+A.greenlge{
+	font-family:Verdana,Arial,Helvetica,sans-serif;
+	font-size: medium;
+	color:#009933;
+	font-weight:bold;
+	text-decoration:none;
+}
+A.greenlge:visited{
+	font-family:Verdana,Arial,Helvetica,sans-serif;
+	font-size: medium;
+	color:#006600;
+	font-weight:bold;
+	text-decoration:none;
+}
+A.greenlge:hover{
+	font-family:Verdana,Arial,Helvetica,sans-serif;
+	font-size: medium;
+	color:#CC3300;
+	font-weight:bold;
+	text-decoration:none;
+}
+
+
+
+/* Coloured Table Backgrounds - Grey & Medium Grey, Light Grey & Very Light Grey*/
+TR.dkgrey{background-color : #333333;}
+TD.dkgrey{background-color : #666666;}
+TR.grey{background-color : #999999;}
+TD.grey{background-color : #999999;}
+TR.mgrey{background-color : #CCCCCC;}
+TD.mgrey{background-color : #CCCCCC;}
+TR.ltgrey{background-color : #E5E5E5;}
+TD.ltgrey{background-color : #E5E5E5;}
+TR.vltgrey{background-color : #F2F2F2;}
+TD.vltgrey{background-color : #F2F2F2;}
+
+/* Coloured Table Backgrounds - Green & Dark Green & Light Green*/
+TR.green{background-color : #009933}
+TD.green{background-color : #009933}
+TR.dkgreen{background-color : #006633}
+TD.dkgreen{background-color : #006633}
+TR.ltgreen{background-color : #CCFFCC}
+TD.ltgreen{background-color : #CCFFCC}
+
+/* Coloured Table Backgrounds - Red & Light Red*/
+TR.red{background-color : #CC3333}
+TD.red{background-color : #CC3333}
+TR.dkred{background-color : #990000}
+TD.dkred{background-color : #990000}
+TR.ltred{background-color : #FFCCCC}
+TD.ltred{background-color : #FFCCCC}
+
+/* Coloured Table Backgrounds - Blue */
+TR.blue{background-color : #003399;}
+TD.blue{background-color : #003399;}
+
+/* Coloured Table Backgrounds - Black */
+TR.black{background-color : #000000;}
+TD.black{background-color : #000000;}
+
+/* Plain Text properties - Black - Fixed width */
+.black{font-family:Verdana,Arial,Helvetica,sans-serif;font-size:10px;color:#000000;font-weight:normal}
+.blackbold{font-family:Verdana,Arial,Helvetica,sans-serif;font-size:10px;color:#000000;font-weight:bold}
+.blacksml{font-family:Verdana,Arial,Helvetica,sans-serif;font-size:10px;color:#000000;font-weight:normal}
+.blacksmlbold{font-family:Verdana,Arial,Helvetica,sans-serif;font-size:10px;color:#000000;font-weight:bold;}
+
+
+/* Plain Text properties - Black Percentage Based */
+.blacklge{
+	font-family:Verdana,Arial,Helvetica,sans-serif;
+	font-size: medium;
+	color:#000000;
+	font-weight:normal
+}
+.blacklgebold{
+	font-family:Verdana,Arial,Helvetica,sans-serif;
+	font-size: medium;
+	color:#000000;
+	font-weight:bold
+}
+.blacklgeitalic{
+	font-family:Verdana,Arial,Helvetica,sans-serif;
+	font-size: medium;
+	color:#000000;
+	font-weight:bold;
+	font-style:italic;
+}
+.blackvlge{
+	font-family:Verdana,Arial,Helvetica,sans-serif;
+	font-size: large;
+	color:#000000;
+	font-weight:normal;
+}
+.blackvlgebold{
+	font-family:Verdana,Arial,Helvetica,sans-serif;
+	font-size: large;
+	color:#000000;
+	font-weight:bold;
+}
+.blacklgebolditalic{
+	font-family:Verdana,Arial,Helvetica,sans-serif;
+	font-size: large;
+	color:#000000;
+	font-weight:bold;
+	font-style:italic;
+}
+
+
+/* Plain Text properties - White  - used in coloured nav headers*/
+.white{font-family:Verdana,Arial,Helvetica,sans-serif;font-size:11px;color:#FFFFFF;font-weight:normal;}
+.whitebold{font-family:Verdana,Arial,Helvetica,sans-serif;font-size:11px;color:#FFFFFF;font-weight:bold;}
+
+/* Plain Text properties - Grey */
+.grey{font-family:Verdana,Arial,Helvetica,sans-serif;font-size:10px;color:#666666;font-weight:normal;}
+.greybold{
+	font-family:Verdana,Arial,Helvetica,sans-serif;
+	font-size: small;
+	color:#666666;
+	font-weight:bold;
+}
+.greysml{font-family:Verdana,Arial,Helvetica,sans-serif;font-size:10px;color:#666666;font-weight:normal;}
+.greysmlbold{font-family:Verdana,Arial,Helvetica,sans-serif;font-size:10px;color:#666666;font-weight:bold;}
+.greylge{
+	font-family:Verdana,Arial,Helvetica,sans-serif;
+	font-size: medium;
+	color:#666666;
+	font-weight:normal;
+}
+.greylgebold{
+	font-family:Verdana,Arial,Helvetica,sans-serif;
+	font-size: medium;
+	color:#666666;
+	font-weight:bold;
+}
+
+/* Plain Text properties - Blue */
+.blue{
+	font-family:Verdana,Arial,Helvetica,sans-serif;
+	font-size: small;
+	color:#003399;
+	font-weight:normal;
+}
+.bluebold{
+	font-family:Verdana,Arial,Helvetica,sans-serif;
+	font-size: small;
+	color:#003399;
+	font-weight:bold;
+}
+.bluesml{font-family:Verdana,Arial,Helvetica,sans-serif;font-size:x-small;color:#003399;font-weight:normal;}
+.bluesmlbold{font-family:Verdana,Arial,Helvetica,sans-serif;font-size:x-small;color:#003399;font-weight:bold;}
+.bluelge{
+	font-family:Verdana,Arial,Helvetica,sans-serif;
+	font-size: medium;
+	color:#003399;
+	font-weight:normal;
+}
+.bluelgebold{
+	font-family:Verdana,Arial,Helvetica,sans-serif;
+	font-size: medium;
+	color:#003399;
+	font-weight:bold;
+}
+
+/* Plain Text properties - Red */
+.red{
+	font-family:Verdana,Arial,Helvetica,sans-serif;
+	font-size: small;
+	color:#CC3333;
+	font-weight:normal;
+}
+.redbold{
+	font-family:Verdana,Arial,Helvetica,sans-serif;
+	font-size: small;
+	color:#CC3333;
+	font-weight:bold;
+}
+.redsml{font-family:Verdana,Arial,Helvetica,sans-serif;font-size:x-small;color:#CC3333;font-weight:normal;}
+.redsmlbold{font-family:Verdana,Arial,Helvetica,sans-serif;font-size:x-small;color:#CC3333;font-weight:bold;}
+.redlgebold{
+	font-family:Verdana,Arial,Helvetica,sans-serif;
+	font-size: medium;
+	color:#CC3333;
+	font-weight:bold;
+}
+
+/* Plain Text properties - Green */
+.green{color:#009933;}
+.greenbold{
+	font-family:Verdana,Arial,Helvetica,sans-serif;
+	font-size: small;
+	color:#009933;
+	font-weight:bold;
+}
+.greensml{font-family:Verdana,Arial,Helvetica,sans-serif;font-size:x-small;color:#009933;font-weight:normal;}
+.greensmlbold{font-family:Verdana,Arial,Helvetica,sans-serif;font-size:x-small;color:#009933;font-weight:bold;}
+.greenlge{
+	font-family:Verdana,Arial,Helvetica,sans-serif;
+	font-size: medium;
+	color:#009933;
+	font-weight:normal
+}
+.greenlgebold{
+	font-family:Verdana,Arial,Helvetica,sans-serif;
+	font-size: medium;
+	color:#009933;
+	font-weight:bold;
+}
+
+/* Copyright Text at base of Page */
+A.copy {font-family:Verdana,Arial,Helvetica,sans-serif;font-size:10px;color:#999999;font-weight:normal;text-decoration:none;line-height: 12px}
+A.copy:visited {font-family:Verdana,Arial,Helvetica,sans-serif;font-size:10px;color:#999999;font-weight:normal;text-decoration:none;line-height: 12px}
+A.copy:hover {font-family:Verdana,Arial,Helvetica,sans-serif;font-size:10px;color:#CC3333;font-weight:normal;text-decoration:none;line-height: 12px}
+
+div#more {margin:0;padding:0;}
+
+#more div.box { padding:10px 10px 20px 10px; border: 1px solid #eaeaea; }
+#more div.container { padding:0; margin-top:1.5em; }
+#more p.intro { font-size:70%; margin:0; }
+#more h4.area { font-size:70%; margin:0; }
+#more p.title { font-weight:bold; font-size:90%; margin:0; }
+#more p.source { font-size:70%; margin:0; }
+#more p.source span.journal {font-style:italic;}
+#more p.seeall { font-size:70%; margin:0; }
+#more p.seeall a { padding-left:10px; background:url(/common/images/arrow_red.gif) left center no-repeat; color:#c03; }
+
+#more a.backtotop:link, a.backtotop:visited {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	float:right;
+	margin-top:5px;
+	margin-right:10px;
+	margin-left:7px;
+	padding-left:10px;
+	font-size:70%;
+	color:#fff;
+	background:url(/common/images/arrow_white_up.gif) 0 0.6em no-repeat;
+}
+
+#more a.backtotop:hover {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color:#fff;
+}
+
+#more h3 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	font-size:90%;
+	color:#fff;
+	background:#216531;
+	padding:3px 0 3px 10px;
+	margin:0 0 0 0;
+}
+
+
+td .autonomy a, td.autonomy a:visited, td.autonomy a:link {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #000000;
+	text-decoration: none;
+	line-height: 14px;
+}
+	
+td .autonomy a:hover {color: #CC1233;}
+.box {font-family: Verdana, Arial, Helvetica, sans-serif; font-size: small; color: #000000;}
+
+/* added 10-07-07 */
+
+.emboopen {
+font-family: Verdana,Arial,Helvetica,sans-serif;
+font-size: x-small;
+color: #CC1233;
+font-weight: bold;
+}

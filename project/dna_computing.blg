@@ -1,0 +1,45 @@
+This is BibTeX, Version 0.99c (TeX Live 2009/Debian)
+The top-level auxiliary file: dna_computing.aux
+The style file: plain.bst
+Database file #1: dna_computing.bib
+You've used 18 entries,
+            2118 wiz_defined-function locations,
+            589 strings with 5869 characters,
+and the built_in function-call counts, 5159 in all, are:
+= -- 491
+> -- 207
+< -- 3
++ -- 82
+- -- 62
+* -- 284
+:= -- 862
+add.period$ -- 52
+call.type$ -- 18
+change.case$ -- 81
+chr.to.int$ -- 0
+cite$ -- 18
+duplicate$ -- 217
+empty$ -- 456
+format.name$ -- 62
+if$ -- 1115
+int.to.chr$ -- 0
+int.to.str$ -- 18
+missing$ -- 15
+newline$ -- 91
+num.names$ -- 40
+pop$ -- 109
+preamble$ -- 1
+purify$ -- 65
+quote$ -- 0
+skip$ -- 171
+stack$ -- 0
+substring$ -- 264
+swap$ -- 46
+text.length$ -- 3
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 68
+warning$ -- 0
+while$ -- 49
+width$ -- 20
+write$ -- 189

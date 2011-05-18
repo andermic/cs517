@@ -1,0 +1,1387 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+
+						
+																																																																																																
+																		
+																								
+ 														 		
+							
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+	
+
+<!-- TEMPLATE FOR SCIENTIFIC REPORT -->
+
+
+<!-- super head top -->
+<title>Computing with DNA</title>
+<meta name="robots" content="noarchive">
+<link rel="stylesheet" href="problems_files/style_older.css" type="text/css">
+<style type="text/css" media="all">@import "/embor/style.css";</style>
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+               
+      
+
+
+
+
+
+
+
+
+
+        
+                
+	
+
+ 
+
+
+
+	
+
+
+
+
+	
+				
+        
+        
+ 
+
+ 
+
+	
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+
+
+
+
+
+<script language="javascript" type="text/javascript">
+function popupWindow(filename,winame,width,height)
+{
+var optionstring = "'width=" + width + ",height=" + height + ",scrollbars=yes,scrolling=yes,statusbar=no,menubar=no,navbar=no'";
+var popwin = window.open(filename,winame,"resizable=yes,scrollbars=yes,scrolling=yes,statusbar=no,menubar=no,navbar=no,width=" + width + ",height=" + height);
+//popwin.focus;
+}
+</script>
+
+
+
+
+
+
+
+
+<script type="text/javascript"><!--//--><![CDATA[//><!--
+	var include = '';
+
+	var wp = '';
+	if (wp != '') include += 'wp='+wp;
+	include += ';';
+
+	var rf = '';
+	if (rf != '') include += "rf="+rf;
+	include += ';';
+
+	var sp = '';
+	if (sp != '') include += "sp="+sp;
+	include += ";";
+
+	var ps = '';
+	if (ps != '') include += "ps="+ps;
+	include += ";";
+
+	var adinf = "lg=no;";
+
+	if(include != ";;;;")
+	{
+		adinf = include;
+	}
+
+	var time = new Date();
+	ordval= (time.getTime());
+
+		ord=Math.random()*10000000000000000;
+//--><!]]></script>
+
+
+<script language="javascript">
+<!--
+var thisIssue = "/embor/journal/v4/n1/";
+var thisCategory = "sciencesoc";
+var urlCurrentIssue = '/embor/journal/v12/n5/';
+var urlArchive = '/embor/archive/index.html';
+var urlAOP = '/embor/journal/vaop/ncurrent/index.html';
+var urlAboutAOP = '/embor/about_aop.html';
+var highlightColor = 'dkgrey';
+var highlightAboutColor = 'ltgrey';
+var wd = 17;
+var ht = 17;
+
+function leftNavRows() {
+	if (thisIssue == '/embor/journal/vaop/ncurrent/') {
+		// current issue white bg
+		writeNavRow('#FFFFFF', urlCurrentIssue, 'Current Issue', 'nav1Off', 'Current Issue', 'circle_off', wd, ht);
+		writeNavSecRow(thisCategory);
+		// aop highlight bg
+		writeNavRow(highlightColor, urlAOP, 'AOP', 'nav1On', 'Advance Online<br><img src="/embor/images/spacer.gif" width="4" height="3" alt="" border="0">Publication', 'circle_white_big_over_AOP', '18', '33');
+		// 'about aop'
+                writeAboutAOPRow(highlightAboutColor, urlAboutAOP, 'About AOP', 'navAOP', 'About AOP', 'circle_sml_grey_over_AOP');
+		
+		// archive white bg
+		writeNavRow('#FFFFFF', urlArchive, 'Archive', 'nav1Off', 'Archive', 'circle_off', wd, ht);
+	}
+	else if (urlCurrentIssue == thisIssue) {
+		// current issue gray bg
+		writeNavRow('#FFFFFF', urlCurrentIssue, 'Current Issue', 'nav1Off', 'Current Issue', 'circle_off', wd, ht);
+		writeNavSecRow(thisCategory);
+		// aop white bg
+		writeNavRow('#FFFFFF', urlAOP, 'AOP', 'nav1Off', 'Advance Online<br><img src="/embor/images/spacer.gif" width="4" height="3" alt="" border="0">Publication', 'circle_off', wd, ht);
+		// archive white bg
+		writeNavRow('#FFFFFF', urlArchive, 'Archive', 'nav1Off', 'Archive', 'circle_off', wd, ht);
+	}
+	else {
+		// current issue white bg
+		writeNavRow('#FFFFFF', urlCurrentIssue, 'Current Issue', 'nav1Off', 'Current Issue', 'circle_off', wd, ht);
+		writeNavSecRow(thisCategory);
+		// aop white bg
+		writeNavRow('#FFFFFF', urlAOP, 'AOP', 'nav1Off', 'Advance Online<br><img src="/embor/images/spacer.gif" width="4" height="3" alt="" border="0">Publication', 'circle_off', wd, ht);
+		// archive gray bg
+		writeNavRow(highlightColor, urlArchive, 'Archive', 'nav1On', 'Archive', 'circle_white', wd, ht);
+	}
+}
+function writeNavSecRow(cat) {
+	document.write(
+		'<tr><td><img src="/embor/images/spacer.gif" width="6" height="8" alt="" border="0"></td>'
+		+ '<td align="left" valign="top"><img src="/embor/images/spacer.gif" width="8" height="3" alt="" border="0"><img src="/embor/images/stem.gif" width="9" height="67"></td>'
+		+ '<td><table cellspacing="0" cellpadding="0" border="0">'
+		+ '<tr><td rowspan=5><img src="/embor/images/spacer.gif" width="2" height="3" alt="" border="0"></td>'
+		+ '<td valign="top"><img src="/embor/images/spacer.gif" width="14" height="3" alt="" border="0"></td>'
+		+ '<td valign="top"><img src="/embor/images/spacer.gif" width="112" height="3" alt="" border="0"></td></tr>'
+	);
+
+	switch (cat) {
+		case "sciencesoc":
+			document.write(
+'<tr><td valign="top"><img src="/embor/images/circle_sml_grey.gif" alt="" width="12" height="16" border="0" name="circEd"><img src="/embor/images/spacer.gif" width="2" height="1" alt="" border="0"></td>'
++ '<td valign="top"><a href="/embor/journal/v12/n5/index.html" class="navEditorial">editorial</a></td></tr>'
++ '<tr><td valign="top" class="red"><img src="/embor/images/circle_sml_red_over.gif" alt="" width="12" height="16" name="circSc"></td>'
++ '<td valign="top" class="red"><a href="/embor/journal/v12/n5/index_ss.html" class="nav3On">science &amp; society</a></td></tr>'
++ '<tr><td valign="top"><img src="/embor/images/circle_sml_blue.gif" alt="" width="12" height="16" name="circRe"></td>'
++ '<td valign="top"><a href="/embor/journal/v12/n5/index_rv.html" class="navReviews">reviews</a></td></tr>'
++ '<tr><td valign="top"><img src="/embor/images/circle_sml_green.gif" alt="" width="12" height="16" name="circSci"></td>'
++ '<td valign="top"><a href="/embor/journal/v12/n5/index_sr.html" class="navScientific">scientific reports</a></td></tr>'
++ '</table></td></tr>'
+			);
+			break;
+		case "review":
+			document.write(
+'<tr><td valign="top"><img src="/embor/images/circle_sml_grey.gif" alt="" width="12" height="16" border="0" name="circEd"><img src="/embor/images/spacer.gif" width="2" height="1" alt="" border="0"></td>'
++ '<td valign="top"><a href="/embor/journal/v12/n5/index_ed.html" class="navEditorial">editorial</a></td></tr>'
++ '<tr><td valign="top"><img src="/embor/images/circle_sml_red.gif" alt="" width="12" height="16" name="circSc"></td>'
++ '<td valign="top"><a href="/embor/journal/v12/n5/index_ss.html" class="navScience">science &amp; society</a></td></tr>'
++ '<tr><td valign="top" class="blue"><img src="/embor/images/circle_sml_blue_over.gif" alt="" width="12" height="16" name="circRe"></td>'
++ '<td valign="top" class="blue"><a href="/embor/journal/v12/n5/index_rv.html" class="nav3On">reviews</a></td></tr>'
++ '<tr><td valign="top"><img src="/embor/images/circle_sml_green.gif" alt="" width="12" height="16" name="circSci"></td>'
++ '<td valign="top"><a href="/embor/journal/v12/n5/index_sr.html" class="navScientific">scientific reports</a></td></tr>'
++ '</table></td></tr>'
+			);
+			break;
+		case "editorial":
+			document.write(
+'<tr><td valign="top" class="black"><img src="/embor/images/circle_sml_grey_over.gif" alt="" width="12" height="16" border="0" name="circEd"><img src="/embor/images/spacer.gif" width="2" height="1" alt="" border="0"></td>'
++ '<td valign="middle" class="black"><a href="/embor/journal/v12/n5/index_ed.html" class="nav3On">editorial</a></td></tr>'
++ '<tr><td valign="top"><img src="/embor/images/circle_sml_red.gif" alt="" width="12" height="16" name="circSc"></td>'
++ '<td valign="top"><a href="/embor/journal/v12/n5/index_ss.html" class="navScience">science &amp; society</a></td></tr>'
++ '<tr><td valign="top"><img src="/embor/images/circle_sml_blue.gif" alt="" width="12" height="16" name="circRe"></td>'
++ '<td valign="top"><a href="/embor/journal/v12/n5/index_rv.html" class="navReviews">reviews</a></td></tr>'
++ '<tr><td valign="top"><img src="/embor/images/circle_sml_green.gif" alt="" width="12" height="16" name="circSci"></td>'
++ '<td valign="top"><a href="/embor/journal/v12/n5/index_sr.html" class="navScientific">scientific reports</a></td></tr>'
++ '</table></td></tr>'
+			);
+			break;
+		default: 		// "sciencereport"
+			document.write(
+'<tr><td valign="top"><img src="/embor/images/circle_sml_grey.gif" alt="" width="12" height="16" border="0" name="circEd"><img src="/embor/images/spacer.gif" width="2" height="1" alt="" border="0"></td>'
++ '<td valign="top"><a href="/embor/journal/v12/n5/index_ed.html" class="navEditorial">editorial</a></td></tr>'
++ '<tr><td valign="top"><img src="/embor/images/circle_sml_red.gif" alt="" width="12" height="16" name="circSc"></td>'
++ '<td valign="top"><a href="/embor/journal/v12/n5/index_ss.html" class="navScience">science &amp; society</a></td></tr>'
++ '<tr><td valign="top"><img src="/embor/images/circle_sml_blue.gif" alt="" width="12" height="16" name="circRe"></td>'
++ '<td valign="top"><a href="/embor/journal/v12/n5/index_rv.html" class="navReviews">reviews</a></td></tr>'
++ '<tr><td valign="top" class="green"><img src="/embor/images/circle_sml_green_over.gif" alt="" width="12" height="16" name="circSci"></td>'
++ '<td valign="top" class="green"><a href="/embor/journal/v12/n5/index_sr.html" class="nav3On">scientific reports</a></td></tr></table></td></tr>'
+			);
+			break;
+	}
+}
+function writeNavRow(color, url, text, textClass, title, circle, width, height) {
+	document.write(
+		'<tr><td><img src="/embor/images/spacer.gif" width="6" height="3" alt="" border="0"></td>'	//
+		+ '<td colspan=2><img src="/embor/images/spacer.gif" width="1" height="3" alt="" border="0"></td></tr>' //
+		+ '<tr><td><img src="/embor/images/spacer.gif" width="6" height="1" alt="" border="0"></td>'
+		+ '<td valign="top" class="'
+		+ color
+		+ '"><img src="/embor/images/'
+		+ circle
+		+ '.gif" alt="" name="circleCUR" id="circleCUR" width="'
+		+ width 
+		+ '" height="'
+		+ height
+		+ '" border="0"></td>'
+		+ '<td class="'
+		+ color
+		+ '"><a href="'
+		+ url 
+		+ '" class="'
+		+ textClass
+		+ '"><img src="/embor/images/spacer.gif" width="4" height="3" alt="" border="0">'
+		+ title
+		+ '</a></td></tr>'
+	);
+}
+function writeAboutAOPRow(color, url, text, textClass, title, circle) {
+        document.write (
+                '<tr><td><img src="/embor/images/spacer.gif" width="6" height="1" alt="" border="0"></td>'
+                + '<td valign="top" class="ltgrey"><img src="/embor/images/dotted_AOP.gif" width="18" height="14"><br>'
+                + '<img src="/embor/images/spacer.gif" width="18" height="3" alt="" border="0"></td>'
+                + '<td valign="top" class="'
+                + color
+                + '" height="17">'
+                + '<table cellspacing="0" cellpadding="0" border="0" height="17">'
+                + '<tr><td valign="top" height="17"><img src="/embor/images/'
+                + circle
+                + '.gif" width="16" height="14"><br>'
+                + '<img src="/embor/images/spacer.gif" width="16" height="3" alt="" border="0"></td>'
+                + '<td valign="middle"><a href="'
+                + url
+                + '" class="'
+                + textClass
+                + '">'
+                + title
+                + '</a></td></tr></table></td></tr>'
+        );
+}
+//-->
+</script>
+<!-- super head bottom -->
+	<!-- resource metadata -->
+				
+				 																								
+			
+				
+																
+			
+			<link title="schema(PRISM)" rel="schema.prism" href="http://prismstandard.org/namespaces/1.2/basic/">
+																																																																	<meta name="prism.copyright" content="© 2003 Nature Publishing Group">
+					<meta name="prism.rightsAgent" content="permissions@nature.com">
+					<meta name="prism.publicationDate" content="2003-01-01">
+					<meta name="prism.volume" content="4">
+					<meta name="prism.number" content="1">
+					<meta name="prism.section" content="Science and Society">
+					<meta name="prism.startingPage" content="7">
+					<meta name="prism.endingPage" content="10">
+					<meta name="prism.publicationName" content="EMBO reports">
+					<meta name="prism.issn" content="ERROR! NO ISSN">
+					<meta name="prism.eIssn" content="ERROR! NO EISSN">
+				
+			<link title="schema(DC)" rel="schema.dc" href="http://purl.org/dc/elements/1.1/">
+																																																		<meta name="dc.publisher" content="Nature Publishing Group">
+					<meta name="dc.language" content="en">
+					<meta name="dc.rights" content="© 2003 Nature Publishing Group">
+					<meta name="dc.title" content="Computing with DNA">
+					<meta name="dc.creator" content="Jack Parker">
+					<meta name="dc.identifier" content="doi:10.1038/sj.embor.embor719">
+					<meta name="dc.date" content="2003-01-01">
+					<meta name="dc.source" content="EMBO reports, Published online: 01 January 2003; | doi:10.1038/sj.embor.embor719">
+				
+																																																						<meta name="citation_publisher" content="Nature Publishing Group">
+					<meta name="citation_authors" content="Jack Parker">
+					<meta name="citation_title" content="Computing with DNA">
+					<meta name="citation_date" content="2003-01-01">
+					<meta name="citation_volume" content="4">
+					<meta name="citation_issue" content="1">
+					<meta name="citation_firstpage" content="7">
+					<meta name="citation_doi" content="doi:10.1038/sj.embor.embor719">
+					<meta name="citation_journal_title" content="EMBO reports">
+			
+																																										<meta name="DCS.dcssip" content="www.nature.com">
+					<meta name="Access" content="Yes">
+					<meta name="WT.cg_n" content="EMBO reports">
+					<meta name="WT.cg_s" content="Science and Society">
+					<meta name="WT.i_dcsvid" content="">
+					<meta name="WT.ec_id" content="">
+					</head><body topmargin="0" leftmargin="0" marginheight="0" marginwidth="0" bgcolor="#ffffff">
+<!-- super body top -->
+<!--/Page Layout Table/-->
+<table width="762" border="0" cellpadding="0" cellspacing="0">
+<!--/Start of Row for Header/-->
+<tbody><tr>
+<td colspan="5"><a name="top"></a>
+<!--/Start Top Banner includes banner ad and search functionality/-->
+
+<table width="762" border="0" cellpadding="0" cellspacing="0">
+<!--/Start of Row for Header/-->
+<tbody><tr><td colspan="6">
+
+<!--/Start Top Banner includes banner ad and search functionality/-->
+<table width="762" border="0" cellpadding="0" cellspacing="0">
+<tbody><tr><td><img src="problems_files/spacer.gif" alt="" height="16" width="1" border="0"><br>
+<img src="problems_files/spacer.gif" alt="" height="1" width="9" border="0"><a href="http://www.nature.com/embor/"><img src="problems_files/embo_reports_logo.gif" alt="EMBO reports" height="54" width="138" border="0"></a></td>
+<td colspan="2" valign="bottom" align="right"><img src="problems_files/spacer.gif" alt="" height="10" width="50" border="0">
+<script language="JavaScript">
+<!--
+document.write ('<ilayer id="layer1" visibility="hidden" width="468" height="60"></ILAYER>');
+document.write ('<nolayer>');
+document.write ('<iframe src="http://ad.doubleclick.net/adi/www.emboreports.com/journal;pos=top;' + adinf + 'sz=468x60;date=200301;ord=' + ordval + '?" width="468" height="60" marginwidth="0" marginheight="0" hspace="0" vspace="0" frameborder="0" scrolling="no">');
+document.write ('<a href="http://ad.doubleclick.net/jump/www.emboreports.com/journal;pos=top;' + adinf + 'abr=!ie4;abr=!ie5;sz=468x60;date=200301;ord=' + ordval + '?">');
+document.write ('<img src="http://ad.doubleclick.net/ad/www.emboreports.com/journal;pos=top;' + adinf + 'abr=!ie4;abr=!ie5;sz=468x60;date=200301;ord=' + ordval + '?" border="0" width="468" height="60" hspace="0" align="center"></a></iframe>');
+document.write ('</nolayer>');
+// -->
+</script><ilayer id="layer1" visibility="hidden" width="468" height="60"></ilayer><nolayer><iframe src="problems_files/journal.html" marginwidth="0" marginheight="0" hspace="0" vspace="0" frameborder="0" height="60" scrolling="no" width="468">&lt;a
+ 
+href="http://ad.doubleclick.net/jump/www.emboreports.com/journal;pos=top;lg=no;abr=!ie4;abr=!ie5;sz=468x60;date=200301;ord=1304802364032?"&gt;&lt;img
+ 
+src="http://ad.doubleclick.net/ad/www.emboreports.com/journal;pos=top;lg=no;abr=!ie4;abr=!ie5;sz=468x60;date=200301;ord=1304802364032?"
+ border="0" width="468" height="60" hspace="0" 
+align="center"&gt;&lt;/a&gt;</iframe></nolayer>
+<noscript>
+<a href="http://ad.doubleclick.net/jump/www.emboreports.com/journal;pos=top;abr=!NN2;sz=468x60;date=200301;tile=1;ord=07893195?">
+<img src="http://ad.doubleclick.net/ad/www.emboreports.com/journal;pos=top;abr=!NN2;sz=468x60;date=200301;tile=1;ord=07893195?" border="0" width="468" height="60" alt="Advertisement" ></a>
+</noscript><img src="problems_files/spacer.gif" alt="" height="5" width="1" border="0"></td></tr>
+</tbody></table>
+
+<table width="762" border="0" cellpadding="0" cellspacing="0">
+<tbody><tr><td><img src="problems_files/spacer_green.gif" alt="" height="6" width="9" border="0"><img src="problems_files/embo_reports_logo_line.gif" alt="EMBO reports" height="6" width="138" border="0"><img src="problems_files/spacer_green.gif" alt="" height="6" width="62" border="0"></td><td colspan="2"><img src="problems_files/spacer_green.gif" alt="" height="6" width="553" border="0"></td></tr>
+<tr><td colspan="3"><img src="problems_files/spacer.gif" alt="" height="2" width="10" border="0"></td></tr>
+<tr valign="top" align="left">
+<td colspan="3">
+<table height="20" width="762" border="0" cellpadding="0" cellspacing="0">
+<tbody><tr>
+<td valign="top">
+<table border="0" cellpadding="2" cellspacing="0">
+<form action="/search/executeSearch?" method="get"></form>
+<tbody><tr>
+<td align="left"><span class="topsearch"><img src="problems_files/spacer.gif" alt="" height="8" width="1" border="0"></span></td>
+<td align="left"><span class="topsearch">SEARCH</span></td>
+<td align="left">
+	<input name="sp-c" value="25" type="hidden">
+	<input name="sp-m" value="0" type="hidden">
+	<input name="sp-s" value="date_descending" type="hidden">
+	<input name="include-collections" value="journals_nature,crawled_content" type="hidden">
+	<input name="exclude-collections" value="journals_palgrave,lab_animal" type="hidden">
+	<input name="sp-p" value="all" type="hidden">
+	<input name="sp-q-1" value="EMBOR" type="hidden">
+<!--
+	<input type="hidden" name="sp-c" value="10" />
+	<input type="hidden" name="sp-x-9" value="cat" />
+	<input type="hidden" name="sp-q-9" value="EMBOR" />
+	<input type="hidden" name="sp-a" value="sp1001702d" />
+	<input type="hidden" name="sp-sfvl-field" value="subject|ujournal" />
+	<input type="hidden" name="sp-x-1" value="ujournal" />
+	<input type="hidden" name="sp-p-1" value="phrase" />
+	<input type="hidden" name="sp-s" value="date">
+	<input type="hidden" name="sp-p" value="all">-->
+	<input name="sp-q" class="long" size="15" id="searchtext" style="width: 93px; height: 17px;" type="text">
+</td>
+<td align="left">
+<input alt="search EMBO reports" src="problems_files/go_btn.gif" height="17" vspace="0" width="24" type="image" border="0">
+</td>
+<td align="left">
+<!--<a href="/search/adv_search?sp-a=sp1001702d&amp;sp-x-1=ujournal&amp;sp-q-1=EMBO Reports"><img src="/embor/images/advanced_btn.gif" width="114" height="17" alt="Go" border="0"></a>--></td>
+</tr>
+</tbody></table>
+</td>
+<td align="right"><a href="http://www.nature.com/myaccount"><img src="problems_files/spacer.gif" alt="" height="8" width="30" border="0"><img src="problems_files/my_account_btn.gif" alt="My Account" height="17" width="88" border="0"></a><img src="problems_files/spacer.gif" alt="" height="2" width="3" border="0"><a href="http://mts-embor.nature.com/cgi-bin/main.plex"><img src="problems_files/sub-manu-button.gif" alt="Submit manuscript" height="17" width="137" border="0"></a><img src="problems_files/spacer.gif" alt="" height="2" width="3" border="0"><a href="http://www.nature.com/embor/about/subscribe.html"><img src="problems_files/subscribe_btn.gif" alt="Subscribe" height="17" width="76" border="0"></a><img src="problems_files/spacer.gif" alt="" height="2" width="3" border="0"><a href="http://www.nature.com/register/embor"><img src="problems_files/register_btn.gif" alt="Register" height="17" width="69" border="0"></a><img src="problems_files/spacer.gif" alt="" height="2" width="3" border="0"><a href="http://www.nature.com/help/"><img src="problems_files/help_btn.gif" alt="Help" height="17" width="44" border="0"></a></td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr>
+<td colspan="3"><img src="problems_files/spacer.gif" alt="" height="2" width="10" border="0"></td>
+</tr>
+<tr class="mgrey">
+<td colspan="3" class="mgrey"><img src="problems_files/spacer.gif" alt="" height="6" width="1" border="0"></td>
+</tr>
+<tr>
+<td colspan="3" height="6" valign="top"><img src="problems_files/spacer.gif" alt="" height="6" width="10" border="0"></td>
+</tr>
+</tbody></table>
+
+<!--/End Top Banner/-->
+</td>
+</tr>
+<!--/End of Row for Header/-->
+
+<!--/Start of Row for Nav and Content/-->
+<tr>
+<td valign="top" width="151">
+<!--/Start Side Nav table/-->
+<!--/Start of Journal home navigation table/-->
+<table width="151" border="0" cellpadding="0" cellspacing="0">
+<tbody><tr>
+<td><img src="problems_files/spacer.gif" alt="" height="1" width="1" border="0"></td>
+<td colspan="2" height="17"><a href="http://www.nature.com/embor/" class="navhomeOff"><img src="problems_files/spacer.gif" alt="" height="3" width="4" border="0">Journal home</a></td>
+</tr>
+
+<tr>
+<td><img src="problems_files/spacer.gif" alt="" height="8" width="6" border="0"></td>
+<td valign="top"><img src="problems_files/circle_off.gif" alt="" name="circleThree" id="circleThree" height="17" width="17" border="0"></td>
+<td valign="middle"><a href="http://www.nature.com/embor/about/aims_scope.html" class="nav1Off"><img src="problems_files/spacer.gif" alt="" height="3" width="4" border="0">Aims and scope</a></td>
+</tr>
+
+<tr>
+<td><img src="problems_files/spacer.gif" alt="" height="1" width="6" border="0"></td>
+<td valign="top"><img src="problems_files/circle_grey.gif" alt="" name="circleCUR" id="circleCUR" height="17" width="17" border="0"></td>
+<td><a href="http://www.nature.com/embor/journal/v12/n5/" class="nav1Off"><img src="problems_files/spacer.gif" alt="" height="3" width="4" border="0">Current issue</a></td>
+</tr>
+
+<tr>
+<td><img src="problems_files/spacer.gif" alt="" height="8" width="6" border="0"></td>
+<td valign="top" align="left"><img src="problems_files/spacer.gif" alt="" height="3" width="8" border="0"><img src="problems_files/stem.gif" height="67" width="9"></td>
+<td>
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody><tr>
+<td rowspan="5"><img src="problems_files/spacer.gif" alt="" height="3" width="2" border="0"></td>
+<td valign="top"><img src="problems_files/spacer.gif" alt="" height="3" width="14" border="0"></td>
+<td valign="top"><img src="problems_files/spacer.gif" alt="" height="3" width="112" border="0"></td>
+</tr>
+<tr>
+<td valign="top"><img src="problems_files/circle_sml_grey.gif" alt="" name="circEd" height="16" width="12" border="0"><img src="problems_files/spacer.gif" alt="" height="1" width="2" border="0"></td>
+<td valign="top"><a href="http://www.nature.com/embor/journal/v12/n5/index.html#ed" class="navEditorial">editorial</a></td>
+</tr>
+<tr>
+<td valign="top"><img src="problems_files/circle_sml_red.gif" alt="" name="circSc" height="16" width="12"></td>
+<td valign="top"><a href="http://www.nature.com/embor/journal/v12/n5/index.html#ss" class="navScience">science &amp; society</a></td>
+</tr>
+<tr>
+<td valign="top"><img src="problems_files/circle_sml_blue.gif" alt="" name="circRe" height="16" width="12"></td>
+<td valign="top"><a href="http://www.nature.com/embor/journal/v12/n5/index.html#rv" class="navReviews">reviews</a></td>
+</tr>
+<tr>
+
+<td valign="top"><img src="problems_files/circle_sml_green.gif" alt="" name="circSci" height="16" width="12"></td>
+<td valign="top"><a href="http://www.nature.com/embor/journal/v12/n5/index.html#sr" class="navScientific">scientific reports</a></td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+
+<tr>
+<td><img src="problems_files/spacer.gif" alt="" height="3" width="6" border="0"></td>
+<td colspan="2"><img src="problems_files/spacer.gif" alt="" height="3" width="1" border="0"></td>
+</tr>
+
+<tr>
+<td><img src="problems_files/spacer.gif" alt="" height="1" width="6" border="0"></td>
+<td valign="top"><img src="problems_files/circle_off.gif" alt="" height="17" width="17" border="0"></td>
+<td valign="top"><a href="http://www.nature.com/embor/journal/vaop/ncurrent/" class="nav1Off"><img src="problems_files/spacer.gif" alt="" height="3" width="4" border="0">Advance Online<br>
+<img src="problems_files/spacer.gif" alt="" height="3" width="4" border="0">Publication</a> </td>
+</tr>
+
+<tr>
+<td><img src="problems_files/spacer.gif" alt="" height="1" width="6" border="0"></td>
+<td valign="top"><img src="problems_files/circle_off.gif" alt="" name="circleCUR" id="circleCUR" height="17" width="17" border="0"></td>
+<td valign="middle"><a href="http://www.nature.com/embor/focus/" class="nav1Off"><img src="problems_files/spacer.gif" alt="" height="3" width="4" border="0">Web Focuses</a></td>
+</tr>
+
+<tr>
+<td><img src="problems_files/spacer.gif" alt="" height="3" width="6" border="0"></td>
+<td colspan="2"><img src="problems_files/spacer.gif" alt="" height="3" width="1" border="0"></td>
+</tr>
+
+<tr>
+<td><img src="problems_files/spacer.gif" alt="" height="3" width="6" border="0"></td>
+<td colspan="2"><img src="problems_files/spacer.gif" alt="" height="3" width="1" border="0"></td>
+</tr>
+
+<tr>
+<td><img src="problems_files/spacer.gif" alt="" height="1" width="6" border="0"></td>
+<td valign="top"><img src="problems_files/spacer.gif" alt="" height="17" width="17" border="0"></td>
+<td valign="middle"><span style="color: rgb(102, 102, 102); font-weight: bold; font-size: 11px; line-height: 13px;">&nbsp;Archive:</span></td>
+</tr>
+
+<tr>
+<td><img src="problems_files/spacer.gif" alt="" height="1" width="6" border="0"></td>
+<td valign="top"><img src="problems_files/circle_off.gif" alt="" name="circleCUR" id="circleCUR" height="17" width="17" border="0"></td>
+<td valign="middle"><a href="http://www.nature.com/embor/archive/" class="nav1Off"><img src="problems_files/spacer.gif" alt="" height="3" width="4" border="0">Browse by issue</a></td>
+</tr>
+
+<tr>
+<td><img src="problems_files/spacer.gif" alt="" height="1" width="6" border="0"></td>
+<td valign="top"><img src="problems_files/circle_off.gif" alt="" name="circleCUR" id="circleCUR" height="17" width="17" border="0"></td>
+<td valign="middle"><a href="http://www.nature.com/embor/archive/subject.html" class="nav1Off"><img src="problems_files/spacer.gif" alt="" height="3" width="4" border="0">Browse by subject</a></td>
+</tr>
+
+<tr>
+<td><img src="problems_files/spacer.gif" alt="" height="1" width="6" border="0"></td>
+<td valign="top"><img src="problems_files/circle_off.gif" alt="" name="circleCUR" id="circleCUR" height="17" width="17" border="0"></td>
+<td valign="middle"><a href="http://www.nature.com/embor/archive/categories.html" class="nav1Off"><img src="problems_files/spacer.gif" alt="" height="3" width="4" border="0">Browse by article<br>
+<img src="problems_files/spacer.gif" alt="" height="3" width="4" border="0">type</a></td>
+</tr>
+
+<tr>
+<td><img src="problems_files/spacer.gif" alt="" height="3" width="6" border="0"></td>
+<td colspan="2"><img src="problems_files/spacer.gif" alt="" height="3" width="1" border="0"></td>
+</tr>
+
+<tr>
+<td><img src="problems_files/spacer.gif" alt="" height="1" width="6" border="0"></td>
+<td valign="top"><img src="problems_files/circle_off.gif" alt="" name="circleTwo" id="circleTwo" height="17" width="17" border="0"></td>
+<td valign="middle"><a href="http://www.nature.com/embor/press_releases/" class="nav1Off"><img src="problems_files/spacer.gif" alt="" height="3" width="4" border="0">Press releases</a></td>
+</tr>
+
+<tr>
+<td><img src="problems_files/spacer.gif" alt="" height="3" width="6" border="0"></td>
+<td colspan="2"><img src="problems_files/spacer.gif" alt="" height="3" width="1" border="0"></td>
+</tr>
+
+<tr>
+<td colspan="3"> <img src="problems_files/spacer.gif" alt="" height="10" width="151" border="0"></td>
+</tr>
+</tbody></table>
+<!--/Start of Authors & ref navigation table/-->
+<table width="151" border="0" cellpadding="0" cellspacing="0">
+
+<tbody><tr class="mgrey">
+<td colspan="2" class="mgrey"><img src="problems_files/spacer.gif" alt="" height="3" width="151" border="0"></td>
+</tr>
+<tr valign="middle">
+<td colspan="2" height="16"><span class="navautOff"><img src="problems_files/spacer.gif" alt="" height="4" width="9" border="0">Authors and referees</span></td>
+</tr>
+
+<tr class="mgrey">
+<td colspan="2" class="mgrey"><img src="problems_files/spacer.gif" alt="" height="1" width="151" border="0"></td>
+</tr>
+
+<tr>
+<td height="4"><img src="problems_files/spacer.gif" alt="" height="4" width="20" border="0"></td>
+<td height="4"><img src="problems_files/spacer.gif" alt="" height="4" width="131" border="0"></td>
+</tr>
+
+<tr>
+<td height="16" valign="top" align="right"><img src="problems_files/circle_sml_plain.gif" alt="" height="16" width="17"></td>
+<td height="16" valign="middle"><a href="http://www.nature.com/embor/about/authors.html" class="navsml">&nbsp;Guide for authors</a></td>
+</tr>
+<tr>
+<td height="16" valign="top" align="right"><img src="problems_files/circle_sml_plain.gif" alt="" height="16" width="17"></td>
+<td height="16" valign="middle"><a href="http://mts-embor.nature.com/" class="navsml">&nbsp;Submit Manuscript</a></td>
+</tr>
+<tr>
+<td height="16" valign="top" align="right"><img src="problems_files/circle_sml_plain.gif" alt="" height="16" width="17"></td>
+<td height="16" valign="middle"><a href="http://www.nature.com/embor/about/referees.html" class="navsml">&nbsp;Guide for referees</a></td>
+</tr>
+<tr>
+<td height="16" valign="top" align="right"><img src="problems_files/circle_sml_plain.gif" alt="" height="16" width="17"></td>
+<td height="16" valign="middle"><a href="http://www.nature.com/embor/about/editor.html" class="navsml">&nbsp;Editors and editorial<br>&nbsp;board</a></td>
+</tr>
+<tr>
+<td height="16" valign="top" align="right"><img src="problems_files/circle_sml_plain.gif" alt="" height="16" width="17"></td>
+<td height="16" valign="middle"><a href="http://www.nature.com/embor/about/contact_embo.html" class="navsml">&nbsp;Contact editorial office</a></td>
+</tr>
+
+
+<tr><td colspan="2" height="10" valign="top"><img src="problems_files/spacer.gif" alt="" height="10" width="151" border="0"></td></tr>
+</tbody></table>
+
+<table width="151" border="0" cellpadding="0" cellspacing="0">
+
+<tbody><tr class="mgrey">
+<td colspan="2" class="mgrey"><img src="problems_files/spacer.gif" alt="" height="3" width="151" border="0"></td>
+</tr>
+<tr valign="middle">
+<td colspan="2" height="16"><span class="navautOff"><img src="problems_files/spacer.gif" alt="" height="4" width="9" border="0">Customer Services</span></td>
+</tr>
+
+<tr class="mgrey">
+<td colspan="2" class="mgrey"><img src="problems_files/spacer.gif" alt="" height="1" width="151" border="0"></td>
+</tr>
+
+<tr>
+<td height="3"><img src="problems_files/spacer.gif" alt="" height="4" width="20" border="0"></td>
+<td height="3"><img src="problems_files/spacer.gif" alt="" height="4" width="131" border="0"></td>
+</tr>
+
+<tr>
+<td height="16" valign="top" align="right"><img src="problems_files/circle_sml_plain.gif" alt="" height="16" width="17"></td>
+<td height="16" valign="middle"><a href="http://www.nature.com/embor/about/subscribe.html" class="navsml">&nbsp;Subscribe</a></td>
+</tr>
+<tr>
+<td height="16" valign="top" align="right"><img src="problems_files/circle_sml_plain.gif" alt="" height="16" width="17"></td>
+<td height="16" valign="middle"><a href="http://www.nature.com/aj/sample_copy.html" class="navsml">&nbsp;Order sample copy</a></td>
+</tr>
+<tr>
+<td height="16" valign="top" align="right"><img src="problems_files/circle_sml_plain.gif" alt="" height="16" width="17"></td>
+<td height="16" valign="top"><a href="http://www.nature.com/embor/about/purchase.html" class="navsml">&nbsp;Purchase articles</a></td>
+</tr>
+<tr>
+<td height="16" valign="top" align="right"><img src="problems_files/circle_sml_plain.gif" alt="" height="16" width="17"></td>
+<td height="26" valign="top"><a href="http://www.nature.com/reprints/" class="navsml">&nbsp;Reprints and<br>&nbsp;permissions</a></td>
+</tr>
+<tr>
+<td height="16" valign="top" align="right"><img src="problems_files/circle_sml_plain.gif" alt="" height="16" width="17"></td>
+<td height="16" valign="middle"><a href="http://www.nature.com/embor/about/contact_npg.html" class="navsml">&nbsp;Contact NPG</a></td>
+</tr>
+<tr>
+<td height="16" valign="top" align="right"><img src="problems_files/circle_sml_plain.gif" alt="" height="16" width="17"></td>
+<td height="16" valign="middle"><a href="http://www.nature.com/embor/about/advertising.html" class="navsml">&nbsp;Advertising</a></td>
+</tr>
+
+<tr>
+<td colspan="2" height="10" valign="top"><img src="problems_files/spacer.gif" alt="" height="10" width="151" border="0"></td>
+</tr>
+<tr class="mgrey">
+<td colspan="2" class="mgrey"><img src="problems_files/spacer.gif" alt="" height="1" width="151" border="0"></td>
+</tr>
+</tbody></table>
+<!--/Embo logo Table/-->
+
+<!--/End Navigation Table/-->
+</td>
+<!--/End Nav TD/-->
+
+<!--/Start Grey Divider Line TD/-->
+<td class="mgrey" valign="top" align="left"><img src="problems_files/spacer.gif" alt="" height="300" width="1" border="0"></td>
+<!--/End Divider TD/-->
+
+<!--/Start Spacer TD/-->
+<td><img src="problems_files/spacer.gif" alt="" height="1" width="22" border="0"></td>
+<!--/End Spacer TD/-->
+
+<!--/Start Centre Information TD/-->
+<td valign="top" align="left">
+<table width="588" border="0" cellpadding="0" cellspacing="0">
+
+<tbody><tr><td valign="top" width="412">
+<table width="412" border="0" cellpadding="0" cellspacing="0">
+
+<!-- no template for this ... need to verify image -->
+<tbody><tr valign="middle"><td height="25" align="left">
+<!-- LOAD SUBCAT IMAGE -->
+<img src="problems_files/header_analysis.gif" alt="analysis" height="19" width="85" border="0"><!-- END SUBCAT IMAGE -->
+</td></tr>
+<tr><td class="red" valign="top" align="left"><img src="problems_files/spacer.gif" height="1" width="412" border="0"></td></tr>
+<tr><td valign="top" align="left"><img src="problems_files/spacer.gif" height="10" width="412" border="0"></td></tr>
+<tr><td valign="top" align="left">
+
+<!-- CITATION INFO -->
+<span class="small"><i>EMBO reports</i> <!-- VOL --><b>4</b>, <!-- ISS -->1, <!-- SPN -->7–<!-- EPN-->10<!-- IDT --> (2003)<br>
+doi:10.1038/sj.embor.embor719<br><br>
+<br>
+</span>
+<!-- END CITATION INFO -->
+
+<!-- LOAD IF ERRORCOR LINKTO -->
+<!-- END IF ERRORCOR LINKTO -->
+
+<!-- LOAD ATL -->
+<span class="h1black">Computing with DNA</span>
+<br>
+<br>
+<!-- END ATL -->
+<!-- LOAD IF STANDFIRST -->
+<span class="bold">Although DNA clearly outclasses any silicon-based 
+computer when it comes to information storage and processing speed, a 
+DNA-based PC is still a long way off</span><br>
+<br>
+<!-- END IF STANDFIRST -->
+
+<!-- LOAD IF AUG -->
+<span class="bodyblack">Jack&nbsp;Parker</span>
+<!-- END IF AUG -->
+
+</td></tr>
+
+
+<tr><td valign="top" align="left">
+
+<!-- LOAD IF AFF -->
+<!-- END IF AFF -->
+
+<!-- LOAD IF CAFF -->
+<!-- END IF CAFF -->
+<!-- LOAD IF AUFN -->
+<!-- END IF AUFN -->
+
+<!-- LOAD IF HST -->
+<!-- END IF HST -->
+</td></tr>
+
+
+
+
+
+
+<tr><td valign="top" align="left"><img src="problems_files/spacer.gif" height="10" width="412" border="0"></td></tr>
+<tr><td class="ltgrey" valign="top" align="left"><img src="problems_files/spacer.gif" height="1" width="412" border="0"></td></tr>
+<tr><td valign="top" align="left"><img src="problems_files/spacer.gif" height="10" width="412" border="0"></td></tr>
+
+<!-- START BODY P -->
+<tr><td valign="top" align="left">
+<span class="bodyblack">On 28 February 2003 the scientific world will 
+celebrate a very special anniversary. It was on this day fifty years ago
+ that James Watson and Francis Crick discovered the structure of DNA — 
+the very essence of life itself. Since then, research into DNA has given
+ biologists a great understanding of life, and has also allowed them to 
+create innumerable useful tools that have wide-ranging applications for 
+both science and society. However, it was not until the early 1990s that
+ researchers started exploring the possibility of utilising DNA's 
+ability to store and process information outside the realms of  biology.
+ In 1994, an US proof-of-principle study showed that DNA could be used 
+to solve mathematical problems, which attracted considerable interest 
+from researchers hoping that DNA would one day replace silicon as the 
+basis for a new wave of computers. But the initial excitement has since 
+dampened down as scientists have realized that there are numerous 
+problems inherent to DNA computing and that they would have to live with
+ their silicon-based computers for quite a while yet. The field 
+consequently changed its focus, and in essence, research into DNA 
+computing is now chiefly concerned with "investigating processes in 
+cells that can be viewed as logical computations and then looking to use
+ these computations to our advantage," as Martyn Amos from the 
+University of Exeter, UK, described it.<!-- CLOSE SPAN IF PULLQUOTE -->
+</span>
+
+<!-- LOAD IF PULLQUOTER IN PREVIOUS P -->
+<br><br>
+<table width="199" border="0" cellpadding="0" cellspacing="0">
+<tbody><tr><td><img src="problems_files/spacer.gif" height="10" width="412" border="0"></td></tr>
+<tr><td class="ltgrey"><img src="problems_files/spacer.gif" height="1" width="412" border="0"></td></tr>
+<tr><td><img src="problems_files/spacer.gif" height="10" width="412" border="0"></td></tr>
+<tr><td align="center">
+<!-- LOAD PULLQUOTE -->
+<span class="dkred">A mix of 1,018 strands of DNA could operate at 10,000 times the speed of today's advanced supercomputers</span>
+<!-- END PULLQUOTE -->
+</td></tr>
+<tr><td><img src="problems_files/spacer.gif" height="10" width="412" border="0"></td></tr>
+<tr><td class="ltgrey"><img src="problems_files/spacer.gif" height="1" width="412" border="0"></td></tr>
+<tr><td><img src="problems_files/spacer.gif" height="10" width="412" border="0"></td></tr>
+</tbody></table>
+<!-- END IF PULLQUOTER IN PREVIOUS P -->
+
+<!-- USE SPAN IF PULLQUOTER -->
+<span class="bodyblack"></span><br><br>
+<span class="bodyblack">It was Leonard Adleman, professor of computer 
+science and molecular biology at the University of Southern California, 
+USA, who pioneered the field when he built the first DNA based computer (<a href="http://www.nature.com/doifinder/" target="_top">L. M. Adleman, <i>Science</i> <b>266</b>, 1021–102; 1994</a>).
+ Intrigued by the molecule's immense capacity to store information in a 
+very small space, he set out to solve a classic puzzle in mathematics — 
+the so-called Hamilton Path problem, better known as the Travelling 
+Salesman problem. This seemingly simple puzzle — a salesman must visit a
+ number of cities that are interconnected by a limited series of roads 
+without passing through any city more than once–is actually quite a 
+killer, and even the most advanced supercomputers would take years to 
+calculate the optimal route for 50 cities. Adleman solved the problem 
+for seven cities within a second, using DNA molecules in a standard 
+reaction tube. He represented each of the seven cities as separate, 
+single-stranded DNA molecules, 20 nucleotides long, and all possible 
+paths between cities as DNA molecules composed of the last ten 
+nucleotides of the departure city and the first ten nucleotides of the 
+arrival city. Mixing the DNA strands with DNA ligase and adenosine 
+triphosphate (ATP) resulted in the generation of all possible random 
+paths through the cities. However, the majority of these paths were not 
+applicable to the situation–they were either too long or too short, or 
+they did not start or finish in the right city. Adleman then filtered 
+out all the paths that neither started nor ended with the correct 
+molecule and those that did not have the correct length and composition.
+ Any remaining DNA molecules represented a solution to the problem.<!-- CLOSE SPAN IF PULLQUOTE -->
+</span>
+
+<!-- LOAD IF PULLQUOTER IN PREVIOUS P -->
+<br><br>
+<table width="199" border="0" cellpadding="0" cellspacing="0">
+<tbody><tr><td><img src="problems_files/spacer.gif" height="10" width="412" border="0"></td></tr>
+<tr><td class="ltgrey"><img src="problems_files/spacer.gif" height="1" width="412" border="0"></td></tr>
+<tr><td><img src="problems_files/spacer.gif" height="10" width="412" border="0"></td></tr>
+<tr><td align="center">
+<!-- LOAD PULLQUOTE -->
+<span class="dkred">The power contained in these tiny molecules caused a flurry of excitement in the computing world</span>
+<!-- END PULLQUOTE -->
+</td></tr>
+<tr><td><img src="problems_files/spacer.gif" height="10" width="412" border="0"></td></tr>
+<tr><td class="ltgrey"><img src="problems_files/spacer.gif" height="1" width="412" border="0"></td></tr>
+<tr><td><img src="problems_files/spacer.gif" height="10" width="412" border="0"></td></tr>
+</tbody></table>
+<!-- END IF PULLQUOTER IN PREVIOUS P -->
+
+<!-- USE SPAN IF PULLQUOTER -->
+<span class="bodyblack"></span><br><br>
+<span class="bodyblack">The computation in Adleman's experiment chugged 
+along at 1,014 operations per second, a rate of 100 Teraflops or 100 
+trillion floating point operations per second; the world's fastest 
+supercomputer, Earth Simulator, owned by the NEC Corporation in Japan, 
+runs at just 35.8 Teraflops. Clearly, computing with DNA has massive 
+advantages over silicon-based machines. Whereas current technology rests
+ on a highly linear principle of logic, and one computation must be 
+completed before the next can begin, the use of DNA means that an 
+enormous number of calculations can take place simultaneously. This 
+parallel power is many times faster than that of traditional machines — a
+ mix of 1,018 strands of DNA could operate at 10,000 times the speed of 
+today's advanced supercomputers. The other major advantage is the 
+potential for information storage. Whereas traditional storage media, 
+such as videotapes, require 10<sup>12</sup> cubic nanometres of space to
+ store a single bit of information, DNA molecules require just one cubic
+ nanometre per bit. Not surprisingly, the power contained in these tiny 
+molecules caused a flurry of excitement in the computing world, and many
+ hoped that "DNA computing could overtake silicon-based technology," 
+commented Ron Weiss, professor of electrical engineering at Princeton 
+University, New Jersey, USA <a href="javascript:%20popupWindow('/embor/journal/v4/n1/fig_tab/embor719_f1.html','fig_hires','630','600')">Fig. 1</a>.</span><br><br>
+</td></tr>
+<!-- LOAD IF FIG -->
+<!-- SPACER ROW -->
+<tr><td valign="top" align="left"><img src="problems_files/spacer.gif" height="20" width="412" border="0"></td></tr>
+<!-- START FIGURE TABLE ROW-->
+<tr><td valign="top" align="left">
+<table width="412" border="0" cellpadding="5" cellspacing="0">
+<tbody><tr><td class="ltgrey" valign="top">
+<table width="60" align="left" border="0" cellpadding="2" cellspacing="0">
+<tbody><tr><td><a href="javascript:%20popupWindow('/embor/journal/v4/n1/fig_tab/embor719_f1.html','fig_hires','650','600')">
+<!-- figure thumbnail -->
+<img src="problems_files/embor719-f1.gif" alt="Figure 1" align="left" border="0"></a></td></tr>
+</tbody></table>
+<!-- LOAD FIGURE PATH AND FIG ID-->
+<a href="javascript:%20popupWindow('/embor/journal/v4/n1/fig_tab/embor719_f1.html','fig_hires','650','600')" class="greenlge">Figure 1</a><br>
+<!-- LOAD IF CAPTION-->
+<span class="bodyblack">The principle of Leonard Adleman's DNA computer to solve the 'Travelling salesman' problem.</span>
+<!-- END IF CAPTION-->
+</td></tr>
+</tbody></table></td></tr>
+<!-- SPACER ROW -->
+<tr><td valign="top" align="left"><img src="problems_files/spacer.gif" height="20" width="412" border="0"></td></tr>
+<!-- END IF FIG -->
+<!-- START NEW TR AND TD AFTER FIG OR TABLE SECTITLE-->
+<tr><td valign="top" align="left">
+<span class="bodyblack">That was eight years ago, however, and although 
+the potential of DNA computing seemed enormous, intervening research has
+ shown that it is constrained by major limitations. Representing all the
+ possible solutions to a problem as strands of DNA means the computation
+ is completed quickly, however, said "You have to perform an exhaustive 
+search to find a small needle in a large haystack", said Amos, and it 
+requires an exponential resource in terms of memory. Although DNA can 
+store a trillion times more information than current storage media, the 
+way in which the information is processed necessitates a massive amount 
+of DNA if larger-scale problems are to be solved. "It has been estimated
+ that if you scaled up the Hamilton Path Problem to 200 cities from 
+Adleman's seven, then the weight of DNA required to represent all the 
+possible solutions would exceed the weight of the earth," said Amos. 
+Furthermore, even although the computation process takes place at an 
+awesome speed, the 'printout' of the result is excruciatingly sluggish, 
+and involves many steps — it took Adleman a week of lab work to extract 
+the potential solutions from his DNA cocktail.<!-- CLOSE SPAN IF PULLQUOTE -->
+</span>
+
+<!-- LOAD IF PULLQUOTER IN PREVIOUS P -->
+<br><br>
+<table width="199" border="0" cellpadding="0" cellspacing="0">
+<tbody><tr><td><img src="problems_files/spacer.gif" height="10" width="412" border="0"></td></tr>
+<tr><td class="ltgrey"><img src="problems_files/spacer.gif" height="1" width="412" border="0"></td></tr>
+<tr><td><img src="problems_files/spacer.gif" height="10" width="412" border="0"></td></tr>
+<tr><td align="center">
+<!-- LOAD PULLQUOTE -->
+<span class="dkred">The general consensus now is that DNA computing will never be able to compete directly with silicon-based technology</span>
+<!-- END PULLQUOTE -->
+</td></tr>
+<tr><td><img src="problems_files/spacer.gif" height="10" width="412" border="0"></td></tr>
+<tr><td class="ltgrey"><img src="problems_files/spacer.gif" height="1" width="412" border="0"></td></tr>
+<tr><td><img src="problems_files/spacer.gif" height="10" width="412" border="0"></td></tr>
+</tbody></table>
+<!-- END IF PULLQUOTER IN PREVIOUS P -->
+
+<!-- USE SPAN IF PULLQUOTER -->
+<span class="bodyblack"></span><br><br>
+<span class="bodyblack">There are also problems concerning the accuracy 
+of the process. DNA strand synthesis is liable to errors, such as 
+mismatching pairs, and is highly dependent on the accuracy of the 
+enzymes involved. Although this did not affect Adleman's work, he only 
+dealt with less than 100 possibilities; a fully operational computer 
+would need to perform thousands upon thousands of calculations, which 
+means that the chance of errors increases exponentially. Furthermore, as
+ more complicated molecules are required for more complicated 
+procedures, the size of the molecules increases, as does their 
+probability of shearing, again contributing to errors <a href="javascript:%20popupWindow('/embor/journal/v4/n1/fig_tab/embor719_f2.html','fig_hires','630','600')">Fig. 2</a>.</span><br><br>
+</td></tr>
+<!-- LOAD IF FIG -->
+<!-- SPACER ROW -->
+<tr><td valign="top" align="left"><img src="problems_files/spacer.gif" height="20" width="412" border="0"></td></tr>
+<!-- START FIGURE TABLE ROW-->
+<tr><td valign="top" align="left">
+<table width="412" border="0" cellpadding="5" cellspacing="0">
+<tbody><tr><td class="ltgrey" valign="top">
+<table width="60" align="left" border="0" cellpadding="2" cellspacing="0">
+<tbody><tr><td><a href="javascript:%20popupWindow('/embor/journal/v4/n1/fig_tab/embor719_f2.html','fig_hires','650','600')">
+<!-- figure thumbnail -->
+<img src="problems_files/embor719-f2.gif" alt="Figure 2" align="left" border="0"></a></td></tr>
+</tbody></table>
+<!-- LOAD FIGURE PATH AND FIG ID-->
+<a href="javascript:%20popupWindow('/embor/journal/v4/n1/fig_tab/embor719_f2.html','fig_hires','650','600')" class="greenlge">Figure 2</a><br>
+<!-- LOAD IF CAPTION-->
+<span class="bodyblack">Ehud Shapiro's molecular Turing Machine.</span>
+<!-- END IF CAPTION-->
+</td></tr>
+</tbody></table></td></tr>
+<!-- SPACER ROW -->
+<tr><td valign="top" align="left"><img src="problems_files/spacer.gif" height="20" width="412" border="0"></td></tr>
+<!-- END IF FIG -->
+<!-- START NEW TR AND TD AFTER FIG OR TABLE SECTITLE-->
+<tr><td valign="top" align="left">
+<span class="bodyblack">Weiss is not confident about overcoming these 
+technical issues, a sentiment echoed by others in the field. The general
+ consensus now is that, as a result of these limitations, DNA computing 
+will never be able to compete directly with silicon-based technology. 
+This does not mean, however, that DNA computing is dead in the water – 
+far from it. But the problems have forced a major rethink and "the 
+emphasis has now shifted away from the original objective," according to
+ Amos. He thinks there is still great potential in DNA computing but for
+ him "the rich potential of DNA computing lies in in vivo computing" — 
+using the technology on a smaller scale, inside cells. For Weiss, the 
+realistic aim is to "demonstrate control at a molecular level."</span><br><br>
+<span class="bodyblack">One such demonstration of this aim was achieved two years ago by Ehud Shapiro's group at the Weizmann Institute in Israel (<a href="http://www.nature.com/doifinder/" target="_top">Y. Benenson <i>et al</i>. <i>Nature</i> <b>414</b>, 430–434; 2001</a>),
+ who built a programmable and autonomous computing machine made of 
+biomolecules. This 'automater' is similar to the hypothetical Turing 
+Machine developed by the British mathematician Alan Turing (1912 to 54) 
+in 1936, a device that converts information from one form into another 
+and operates on a finite sequence of symbols — Shapiro's machine used 
+two 'inputs'. Based on a series of transition rules, the machine changes
+ its internal state according to the current state and input until it 
+reaches a 'final state' when all inputs have been processed. Shapiro's 
+automater uses restriction endonucleases and ligase as the 'hardware' to
+ alter the state of the machine, and double-stranded DNA as the inputs 
+and the transition rules. The DNA 'software' is continuously ligated and
+ cut by the enzymes, until it reaches a final state — a defined sticky 
+end — to which a 'reporter' DNA is ligated, thus terminating the 
+computation. Shapiro hopes to be able to develop this very simple 
+concept and build progressively more complicated models until he is able
+ to construct a fully operational molecular Turing Machine. This would 
+be quite an achievement as a Turing Machine is capable of performing all
+ mathematical operations and is regarded as the basis of today's 
+computers. He finds it hard to predict whether he will be able to 
+complete his goal but "the direction is promising," he added.</span><br><br>
+<span class="bodyblack">As Shapiro said, "A lot of information is 
+available as biological molecules. If you can programme them and respond
+ to the information then you can do a lot." His long-term vision is "to 
+create molecular computing machines that can analyse situations in 
+cells, and then synthesize molecules to deal with them." The potential 
+applications of such technology are vast. The use of programmed cells as
+ 'biological sentinels', as Weiss dubbed them, could have obvious 
+applications in fighting diseases, by recognizing damaged cells or 
+tissue and either reporting the problem or, even better, effecting the 
+release of reparative molecules.</span><br><br>
+<span class="bodyblack"><a name="ILLUS1"></a><br><br>
+<table style="clear: both;" width="200" align="RIGHT" border="0" cellpadding="2">
+<tbody><tr>
+<td align="center"><img src="problems_files/embor719-i1.jpg" align="center"></td>
+<td><img src="problems_files/spacer.gif" height="1" width="2"></td>
+</tr>
+<tr><td colspan="2"><img src="problems_files/spacer.gif" height="10" width="412" border="0"></td></tr>
+</tbody></table><div style="clear: both; margin: 0pt; padding: 0pt;"></div>
+Another promising direction is the molecular self-assembly of DNA to 
+build complex molecular structures, which could have an impact on other 
+fields, such as nanotechnology. Eric Winfree, from the California 
+Institute of Technology, USA, has devoted considerable amounts of time 
+to this topic, and has developed a method for building molecular 'tiles'
+ — minute blocks of DNA. By programming the edges of these tiles, he has
+ been able to force DNA to come together in tiny molecular patterns. He 
+has so far only been able to build simple structures, however, and, he 
+said, "we need to get to the point where we can construct complicated 
+patterns."</span><br><br>
+<span class="bodyblack">Yet, as Amos pointed out, "this is all blue sky 
+at the moment." All of this research is still in the proof-of-principle 
+stage, and any practical applications are at least five to ten years 
+away. Clearly, DNA computing will not become a rival for today's 
+silicon-based machines and "it will not affect the way you or I live," 
+said Weiss. However, the real excitement in the field lies in bringing 
+together biologists, chemists, computer scientists and mathematicians to
+ understand and simulate fundamental biological processes and algorithms
+ taking place within cells. "We shouldn't be looking for competition 
+with traditional machines, we should be looking outside the box for a 
+niche for other applications." said Amos. However, he added, "If I'm 
+honest, biocomputing has yet to establish this niche."</span><br><br>
+</td></tr>
+<!-- END BODY P -->
+
+<!-- END BODY SPACER ROW -->
+<tr><td valign="top" align="left"><img src="problems_files/spacer.gif" height="20" width="412" border="0"></td></tr>
+
+<!-- LOAD IF ACK -->
+<!-- END IF ACK -->
+
+<!-- LOAD IF FOOTNOTES -->
+<!-- END IF FOOTNOTES -->
+
+<!-- START REFERENCE INCLUDE -->
+<!-- END REFERENCE INCLUDE -->
+
+<!-- START IF SUPPINFO -->
+<!-- END IF SUPPINFO -->
+
+<!-- LOAD IF LINKS -->
+<!-- END IF LINKS -->
+
+
+
+
+<tr><td valign="top" align="right"><a href="#top" class="black">top&nbsp;<img src="problems_files/black_arrow_small_up.gif" alt="go to top" height="4" width="7" border="0"></a><img src="problems_files/spacer.gif" height="8" width="4" border="0"></td></tr>
+
+<tr><td valign="top" align="left"><img src="problems_files/spacer.gif" height="20" width="412" border="0"></td></tr>
+
+</tbody></table>
+</td>
+<!-- END MAIN CONTENT -->
+
+<!-- START RIGHT CELL WITH 'THIS ARTICLE' LINKS -->
+<td valign="top" width="175" align="right">
+<img src="problems_files/spacer.gif" height="5" width="175" border="0">
+
+<!-- START TABLE WITH EMAIL AND PDF LINKS - ALL ARTICLES -->
+<table width="148" border="0" cellpadding="0" cellspacing="0">
+<tbody><tr valign="top"><td colspan="2" class="grey">
+<table width="148" border="0" cellpadding="0" cellspacing="0">
+<tbody><tr><td width="10"><img src="problems_files/corner_grey_left.gif" height="18" width="10"></td><td valign="middle" width="135"><span class="whitebold">This article</span></td></tr>
+
+</tbody></table></td></tr>
+
+<tr><td colspan="2" class="dkgrey" height="1"><img src="problems_files/spacer.gif" height="1" width="148" border="0"></td></tr>
+<tr><td colspan="2" height="1"><img src="problems_files/spacer.gif" height="1" width="148" border="0"></td></tr>
+<tr><td colspan="2" class="vltgrey" height="1"><img src="problems_files/spacer.gif" height="5" width="148" border="0"></td></tr>
+
+<!-- EMAIL TO FRIEND LINK -->
+<tr><td class="vltgrey" valign="top"><img src="problems_files/spacer.gif" height="3" width="29" border="0"><br>
+<img src="problems_files/spacer.gif" height="8" width="8" border="0"><!-- LOAD ARTICLE ID AND PATH --><a href="http://www.nature.com/foxtrot/svc/mailform?file=/embor/journal/v4/n1/full/embor719.html" class="black"><img src="problems_files/icon_email.gif" alt="Email" height="10" width="13" border="0"></a><img src="problems_files/spacer.gif" alt="" height="8" width="5" border="0"></td><td class="vltgrey" valign="top"><!-- LOAD ARTICLE ID AND PATH --><a href="http://www.nature.com/foxtrot/svc/mailform?file=/embor/journal/v4/n1/full/embor719.html" class="black">Email link to a friend</a></td></tr>
+<!-- END EMAIL TO FRIEND LINK -->
+
+<!-- PDFLINK -->
+<tr><td class="vltgrey" valign="middle"><img src="problems_files/spacer.gif" height="8" width="8" border="0"><!-- LOAD ARTICLE ID AND PDF PATH --><a href="http://www.nature.com/embor/journal/v4/n1/pdf/embor719.pdf" class="black"><img src="problems_files/icon_pdr.gif" alt="Download PDF" height="14" width="14" border="0"></a><img src="problems_files/spacer.gif" alt="" height="8" width="5" border="0"></td>
+<td class="vltgrey" height="20" valign="middle"><!-- LOAD ARTICLE ID AND PDF PATH --><a href="http://www.nature.com/embor/journal/v4/n1/pdf/embor719.pdf" class="black">Download PDF</a></td></tr>
+<!-- END PDFLINK -->
+
+
+
+
+
+
+<tr><td class="vltgrey" height="15" valign="middle"><img src="problems_files/spacer.gif" alt=" " height="8" width="10" border="0"><a href="http://s100.copyright.com/AppDispatchServlet?publisherName=NPG&amp;publication=EMBO%20reports&amp;title=Computing%20with%20DNA&amp;author=Jack%20Parker&amp;contentID=10.1038/sj.embor.embor719&amp;publicationDate=01/01/2003&amp;Vol=4&amp;Issue=1" class="black"><img alt="rights and permissions" src="problems_files/permissions.gif" height="10" width="13" border="0"></a><img src="problems_files/spacer.gif" alt="" height="8" width="5" border="0"></td>
+<td class="vltgrey" height="15" valign="middle"><a href="http://s100.copyright.com/AppDispatchServlet?publisherName=NPG&amp;publication=EMBO%20reports&amp;title=Computing%20with%20DNA&amp;author=Jack%20Parker&amp;contentID=10.1038/sj.embor.embor719&amp;publicationDate=01/01/2003&amp;Vol=4&amp;Issue=1" class="black">Rights and permissions</a></td></tr>
+
+<tr><td class="vltgrey" height="15" valign="middle"><img src="problems_files/spacer.gif" alt=" " height="8" width="10" border="0"><a href="https://s100.copyright.com/AppDispatchServlet?publisherName=NPGR&amp;publication=EMBO%20reports&amp;title=Computing%20with%20DNA&amp;author=Jack%20Parker&amp;contentID=10.1038/sj.embor.embor719&amp;publicationDate=01/01/2003&amp;volumeNum=4&amp;issueNum=1&amp;numPages=4&amp;pageNumbers=pp7-10&amp;orderBeanReset=true" class="black"><img alt="order commercial reprints" src="problems_files/ocr.gif" height="10" width="13" border="0"></a><img src="problems_files/spacer.gif" alt="" height="8" width="5" border="0"></td>
+<td class="vltgrey" height="15" valign="middle"><a href="https://s100.copyright.com/AppDispatchServlet?publisherName=NPGR&amp;publication=EMBO%20reports&amp;title=Computing%20with%20DNA&amp;author=Jack%20Parker&amp;contentID=10.1038/sj.embor.embor719&amp;publicationDate=01/01/2003&amp;volumeNum=4&amp;issueNum=1&amp;numPages=4&amp;pageNumbers=pp7-10&amp;orderBeanReset=true" class="black">Reprints</a></td></tr>
+
+
+
+
+<tr><td class="vltgrey" valign="top"><img src="problems_files/spacer.gif" height="5" width="29" border="0"></td><td class="vltgrey" valign="top"><img src="problems_files/spacer.gif" height="5" width="111" border="0"></td></tr>
+<!-- END TABLE WITH EMAIL AND PDF LINKS  -->
+</tbody></table>
+
+
+<!-- START TABLE WITH INTERNAL LINKS IF PRESENT  -->
+<table width="148" border="0" cellpadding="0" cellspacing="0">
+
+<tbody><tr><td colspan="2" height="1"><img src="problems_files/spacer.gif" height="1" width="148" border="0"></td></tr>
+<tr><td colspan="2" class="ltgrey" height="1"><img src="problems_files/spacer.gif" height="5" width="148" border="0"></td></tr>
+
+<!-- LOAD IF ABS -->
+<!-- END IF ABS -->
+
+
+<!-- LOAD IF ACK -->
+<!-- END IF ACK -->
+
+<!-- LOAD IF BIBL  -->
+<!-- END IF BIBL  -->
+
+<!-- LOAD IF FIG OR TABLE  -->
+<tr><td class="ltgrey" valign="top"><img src="problems_files/spacer.gif" height="3" width="29" border="0"><br>
+<img src="problems_files/spacer.gif" height="8" width="8" border="0"><img src="problems_files/spacer.gif" alt="" height="8" width="5" border="0"><img src="problems_files/circle_sml_grey_grey.gif" height="7" width="7"></td>
+<td class="ltgrey" height="16" valign="top"><!-- LINK TO FIGURE AND TABLE WINDOW  --><a href="http://www.nature.com/embor/journal/v4/n1/fig_tab/embor719_ft.html" class="black" target="_new">Figures &amp; tables</a></td></tr>
+<!-- END IF FIG OR TABLE  -->
+
+<!-- LOAD IF SUPPINFO  -->
+<!-- END IF SUPPINFO  -->
+
+<!-- LOAD IF LINKS  -->
+<!-- END IF LINKS  -->
+
+<!-- SPACER ROW  -->
+<tr><td colspan="2" class="ltgrey" height="1"><img src="problems_files/spacer.gif" height="5" width="148" border="0"></td></tr>
+
+<tr><td valign="top"><img src="problems_files/spacer.gif" height="1" width="29" border="0"></td>
+<td valign="top"><img src="problems_files/spacer.gif" height="1" width="111" border="0"></td></tr>
+<!-- END INTERNAL LINK SECTION  -->
+</tbody></table>
+
+
+<!-- START RELATED MATERIAL SECTION  -->
+<table width="148" border="0" cellpadding="0" cellspacing="0">
+</table>
+<!-- END RELATED MATERIAL SECTION  -->
+
+<!-- NEXT AND PREVIOUS LINK SECTION  -->
+<table width="148" border="0" cellpadding="0" cellspacing="0">
+<tbody><tr><td colspan="2" height="1"><img src="problems_files/spacer.gif" height="1" width="148" border="0"></td></tr>
+<tr><td colspan="2" class="ltgrey" height="1"><img src="problems_files/spacer.gif" height="5" width="148" border="0"></td></tr>
+<!-- LOAD IF NEXT FULLTEXT LINK  -->
+<tr><td class="ltgrey" valign="top"><img src="problems_files/spacer.gif" height="3" width="29" border="0"><br>
+<img src="problems_files/spacer.gif" height="8" width="8" border="0"><img src="problems_files/spacer.gif" alt="" height="8" width="5" border="0"><img src="problems_files/grey_arrow_small_right.gif" height="7" width="4"></td><td class="ltgrey" height="16" valign="top"><a href="http://www.nature.com/embor/journal/v4/n1/full/embor720.html" class="black">Next article</a></td></tr>
+<!-- END IF NEXT FULLTEXT LINK  -->
+<!-- LOAD IF PREVIOUS FULLTEXT LINK  -->
+<tr><td class="ltgrey" valign="top"><img src="problems_files/spacer.gif" height="3" width="29" border="0"><br>
+<img src="problems_files/spacer.gif" height="8" width="8" border="0"><img src="problems_files/spacer.gif" alt="" height="8" width="5" border="0"><img src="problems_files/grey_arrow_small_left.gif" height="7" width="4"></td><td class="ltgrey" height="16" valign="top"><a href="http://www.nature.com/embor/journal/v4/n1/full/embor718.html" class="black">Previous article</a></td></tr>
+<!-- END IF PREVIOUS FULLTEXT LINK  -->
+<!-- SPACER ROW  -->
+<tr><td class="ltgrey" valign="top"><img src="problems_files/spacer.gif" height="5" width="29" border="0"></td><td class="ltgrey" valign="top"><img src="problems_files/spacer.gif" height="5" width="111" border="0"></td></tr>
+</tbody></table>
+<!-- END NEXT AND PREVIOUS LINK SECTION  -->
+
+</td>
+<!-- END RIGHT CELL WITH 'THIS ARTICLE' LINKS -->
+
+</tr>
+</tbody></table></td>
+<!--/End Centre Information TD/-->
+
+<!--/Start Spacer TD/-->
+<!--/Start Right-hand Navigation TD/-->
+<td valign="top" align="right"><img src="problems_files/spacer.gif" alt="" height="5" width="1" border="0"></td>
+<!--/End Navigation TD/-->
+</tr>
+
+<tr class="ltgrey"><td class="ltgrey" colspan="5"><img src="problems_files/spacer.gif" alt="" height="1" width="10" border="0"></td></tr>
+
+<tr><td colspan="5"><img src="problems_files/spacer.gif" alt="" height="5" width="10" border="0"></td></tr>
+
+<!--/Copyright Info/-->
+<tr><td colspan="6"><img src="problems_files/spacer.gif" alt="" height="3" width="4" border="0"><a href="http://npg.nature.com/npg/servlet/Content?data=xml/08_privacy.xml&amp;style=xml/08_privacy.xsl" class="copy">Privacy Policy</a><img src="problems_files/spacer.gif" height="10" width="310" border="0"><a class="copy" href="http://www.embo.org/" target="_blank">Copyright © 2003 by the European Molecular Biology Organization</a></td></tr>
+<tr><td colspan="5"><img src="problems_files/spacer.gif" height="5" width="310" border="0"></td></tr></tbody></table>
+</td></tr></tbody></table>
+
+<script language="JavaScript">
+<!--
+document.writeln ('<layer src="http://ad.doubleclick.net/adl/www.emboreports.com/journal;pos=top;' + adinf + 'sz=468x60;date=200301;ord=' + ordval + '?" visibility="hidden" width="468" height="60" onload="moveToAbsolute(layer1.pageX,layer1.pageY);clip.height=60;clip.width=468;visibility=\'show\';"></layer>');
+// -->
+</script><layer src="http://ad.doubleclick.net/adl/www.emboreports.com/journal;pos=top;lg=no;sz=468x60;date=200301;ord=1304802364032?" visibility="hidden" width="468" height="60" onload="moveToAbsolute(layer1.pageX,layer1.pageY);clip.height=60;clip.width=468;visibility='show';"></layer>
+
+<!-- super body bottom -->
+<!-- super javascript -->
+																												
+																																														
+						<script type="text/javascript" src="problems_files/jquery.js"></script>
+								<script type="text/javascript" src="problems_files/addEventListener.js"></script>
+								<script type="text/javascript" src="problems_files/toCamelCase.js"></script>
+								<script type="text/javascript" src="problems_files/getComputedStyles.js"></script>
+								<script type="text/javascript" src="problems_files/findPosition.js"></script>
+								<script type="text/javascript" src="problems_files/resize.js"></script>
+								<script type="text/javascript" src="problems_files/resize_002.js"></script>
+								<script type="text/javascript" src="problems_files/addEvent.js"></script>
+								<script type="text/javascript" src="problems_files/tsedge_instr-min.js"></script>
+			
+
+<script type="text/javascript"><!--//--><![CDATA[//><!--
+(function($) {
+	$('a.popup-this').bind('click', function() {
+		window.open(this.href);
+		return false;
+	});
+})(jQuery);
+//--><!]]></script>
+
+
+
+																																																																								
+																																																																								
+																																																																								
+																
+<!--[if IE 6]>
+	<script type="text/javascript" src="/aj/scripts/ie-specific/ie-6.js"></script>
+<![endif]-->
+																																																																								
+																																																																								
+																																																																								
+																																																																								
+																																																																								
+																																																																								
+																																
+
+
+			<!-- Nielsen/NetRatings SiteCensus V5.3 -->
+	<script type="text/javascript"><!--//--><![CDATA[//><!--
+		var _rsCI="us-nature";
+		var _rsCG="0";
+		var _rsDN="//secure-us.imrworldwide.com/";
+		var _rsPLfl=0;
+		var _rsSE=1;
+		var _rsSM=1.0;
+		var _rsCL=1;
+	//--><!]]></script>
+	<script type="text/javascript" src="problems_files/v53.js"></script><script language="JavaScript" type="text/javascript" src="problems_files/j"></script><img src="problems_files/m.gif" alt="" height="1" width="1"> 	<noscript>
+		<div><img src="http://secure-us.imrworldwide.com/cgi-bin/m?ci=us-nature&amp;cg=0&amp;cc=1" alt="" /></div>
+	</noscript>
+
+						<!-- webtrends Version: 8.6.0 -->
+	<script src="problems_files/webtrends.js" type="text/javascript"></script>
+	<script type="text/javascript"><!--//--><![CDATA[//><!--
+		var _tag=new WebTrends();
+		_tag.dcsGetId();
+	//--><!]]></script><script type="text/javascript" src="problems_files/wtid.js"></script>
+	<script type="text/javascript"><!--//--><![CDATA[//><!--
+		// Add custom parameters here.
+		_tag.WT.z_cg_type = _tag.getContentType(_tag.WT.cg_n); 
+		
+		// _tag.DCSext.param_name=param_value;
+		_tag.dcsCollect();
+	//--><!]]></script>
+	<noscript>
+		<div><img alt="" id="DCSIMG" width="1" height="1" src="http://statse.webtrendslive.com/dcs0zztfg00000s969s37qoal_2f6z/njs.gif?dcsuri=/nojavascript&amp;WT.js=No&amp;WT.tv=8.6.0" /></div>
+	</noscript>
+	<script type="text/javascript"><!--//--><![CDATA[//><!--
+	(function($) {
+		$(function() {
+			var applyParams = function(wt) {
+				var params = [];
+				for (var prop in wt) {
+					params.push(prop);
+					params.push(wt[prop]);
+				}
+				_tag.dcsMultiTrack.apply(_tag, params);
+			};
+			var track = function() {
+				var wt = {};
+				wt['DCS.dcsuri'] = this.pathname ? this.pathname.indexOf('/') !== 0 ? '/' + this.pathname : this.pathname : '/';
+				wt['DCS.dcsqry'] = this.search ? this.search.substring(1) : '';
+				wt['WT.ti'] = 'Download:' + (this.hostname ? this.hostname.split(':')[0] : '') + wt['DCS.dcsuri'] + (wt['DCS.dcsqry'] ? '?' + wt['DCS.dcsqry'] : '');
+				wt['WT.dl'] = '20';
+				applyParams(wt);
+			};
+
+			$('a').each(function() {
+				var h = this.href;
+				if (h.indexOf('/rss') != -1 && h.match(/\/rss\/?(\?.*)?$/)) {
+					$(this).bind('click', track);
+				}
+			});
+			
+			$('div[class*="adunit-"] a').bind('click', function() {
+				var classes = $(this).parents('div[class*="adunit-"]:first').attr('class');
+				if (classes) {
+					var match = /(^|\s)adunit-([^\s]+)/.exec(classes);
+					_tag.dcsMultiTrack('WT.ac', (match) ? match[2] : '');
+				}
+			});
+		});	
+	})(jQuery);
+	//--><!]]></script>
+	<!-- end webtrends Version: 8.6.0 -->
+</body></html>
