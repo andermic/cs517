@@ -1,0 +1,163 @@
+\documentclass{article}
+\usepackage[pdftex]{graphicx}
+\usepackage{amsmath}
+\usepackage{verbatim}
+\usepackage{enumerate}
+\usepackage{parskip}
+\author{Michael Anderson}
+\title{Homework 8}
+\begin{document}
+\maketitle
+\center{CS517}
+\center{Prof. Cull}\\
+\flushleft
+\newpage
+
+\section{}
+Does:
+
+\[
+\frac{a}{b} \le \frac{p}{q} \hspace{1em} \text{and} \hspace{1em} \frac{p}{q}
+\le \frac{a}{b} \hspace{1em} \text{imply} \hspace{1em}
+\frac{a}{b} = \frac{p}{q}\text{?}
+\]
+
+Yes. $a/b$ and $p/q$ are then (possibly two different ways of writing) the same
+rational number.
+
+\begin{enumerate}[a)]
+\item
+If S is not the null set, then $\le$ is well-defined because all of the elements
+of
+the equivalence classes are the same rational number. Iff a rational number
+(equivalence class in our construction) is less than or equal to a second
+rational, then the corresponding ordered pair representations of those rationals
+have that same relationship. 
+
+If S is the null set, then the claim is true because $x \le y$ and $[x] \le
+[y]$ are both always false for any $x$ and $y$ imaginable. False is always
+the boolean equivalent of false, and iff is the same as double implication
+or boolean equivalence.
+
+\item
+Here an equivalence class is simply the set of ordered pairs of naturals that
+can be used to
+write some particular positive rational. So $\le$ must be reflexive and
+transitive
+on our equivalence classes because, from grade school math, it is reflexive and
+transitive on rational numbers.
+
+\item
+By definition of terms, a number cannot be both greater than and less than some
+other number. It also cannot be both greater than and equal, or both less than
+and equal, some other number. So if $A$ is greater than or equal $B$, and $A$
+is less than or equal $B$, $A = B$.
+
+\item
+No, because in this construction a positive rational represents an equivalence
+class in the set of ordered pairs, not an element. A positive rational has an
+infinite number of ordered pair representations, not any particular one.
+
+\item
+Since we are defining anti-symmetry with equivalence classes, the definition we
+want here is:
+
+\[
+x \le y \hspace{6pt} \text{or} \hspace{6pt} y \le x \hspace{6pt} \text{or}
+\hspace{6pt} x \equiv y 
+\]
+
+\item
+Generally, we know that given two rationals $x$ and $y$, either the first is
+less than the second, the second is less than the first, or they are equal.
+If two ordered pairs from our construction are not in the same equivalence
+class, then they are unequal and one is less than the other. If two ordered
+pairs from our construction represent the same rational number,
+then they are in the same equivalence class. So we have that two ordered pairs,
+by the usual ordering of the rationals given in the problem statement, will
+either be $<$, $>$, or $\equiv$ to one another.
+
+\item
+
+\end{enumerate}
+\section{}
+Dividing a list into two lists about a pivot is a subproblem of quicksort.
+
+The set of primes is a \emph{subset} of the set of naturals.
+
+2-SAT is no harder than 3-SAT.
+
+If $A$ is a subproblem of $B$, then $A$ can be no harder than $B$, because $A$
+must be solved in order to solve $B$. None of the other 5 possible implications
+hold. 
+
+\section{}
+The first relationship holds because we can recognize the complement of a set
+by simply flipping the output of a recognizer for the set from $YES$ to $NO$
+and vice versa. This means
+that recognizing a set has the same degree as recognizing the complement of a
+set. By similar reasoning, the second relationship holds as well.
+
+\section{}
+\begin{enumerate}[a)]
+\item
+Want to show that
+
+\[
+(A \le_{log} B \hspace{1em} \text{and} \hspace{1em} B \le_{log} C)
+\hspace{1em} \rightarrow \hspace{1em} A \le_{log} C
+\]
+
+Since we can bound time as exponential in the amount of space required, we have
+that log-space reductions are also polynomial time reductions, because a
+logarithm exponentiated is a polynomial. We already know that polynomial time
+reductions used in NP, for example, are transitive.
+
+\item
+
+
+\end{enumerate}
+\section{}
+
+\section{}
+
+\section{}
+\begin{enumerate}[a)]
+\item
+Substitute the given solution into the difference equation to obtain:
+\[
+\left(\frac{1-\beta}{\beta}\right)^n \hspace{6pt} \stackrel{?}{=} \hspace{6pt}
+\beta \left(\frac{1-\beta}{\beta}\right)^{n+1} + (1-\beta)
+\left(\frac{1-\beta}{\beta}\right)^{n-1} 
+\]
+
+\[
+\left(\frac{1-\beta}{\beta}\right)^n \hspace{6pt} \stackrel{?}{=} \hspace{6pt}
+(1-\beta)\left(\frac{1-\beta}{\beta}\right)^{n} + 
+\beta \left(\frac{1-\beta}{\beta}\right)^{n}
+\]
+
+\[
+\left(\frac{1-\beta}{\beta}\right)^n \hspace{6pt} \stackrel{?}{=} \hspace{6pt}
+\left(\frac{1-\beta}{\beta}\right)^{n} -
+\beta \left(\frac{1-\beta}{\beta}\right)^{n} +
+\beta \left(\frac{1-\beta}{\beta}\right)^{n}
+\]
+
+\[
+\left(\frac{1-\beta}{\beta}\right)^n \hspace{6pt} = \hspace{6pt}
+\left(\frac{1-\beta}{\beta}\right)^n
+\]
+
+\item
+Substitution into the solution gives that $p_0 = 1$, and that it is certain $n$
+must equal 0. So the algorithm must terminate.
+
+\item
+The substition in a) holds for any $\beta \ne 0$, which shows that the
+same solution is still valid here, and that the algorithm must terminate
+eventually.
+
+\end{enumerate}
+
+\end{document}
