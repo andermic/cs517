@@ -1,0 +1,54 @@
+\documentclass{article}
+\usepackage[pdftex]{graphicx}
+\usepackage{amsmath}
+\usepackage{verbatim}
+\usepackage{enumerate}
+\usepackage{parskip}
+\author{Michael Anderson}
+\title{Homework 8 - Problems 8-10}
+\begin{document}
+\maketitle
+\center{CS517}
+\center{Prof. Cull}\\
+\flushleft
+\newpage
+
+\section{8}
+\begin{enumerate}[a)]
+\item
+It is possible to construct a linear bounded automaton that accepts this
+language, so it is definitely a CSL. This is because squaring a number can be
+done in space linear in the length of the number.
+
+\item
+This language is not context-free (and therefore not regular also), by the
+pumping lemma for context free languages. Whether the two pumped substrings are 
+all
+$a$'s, or they are all $b$'s, or one of them has some $a$'s and some $b$'s,
+the pumped string cannot maintain the property that the number of
+$b$'s is the square of the number of $a$'s. This is because the number of $b$'s 
+required for a string to be in the language is not linear in the number of $a$'s
+in such a string.
+
+\end{enumerate}
+
+\section{9}
+\begin{enumerate}[a)]
+\item
+It is not known whether $NLIN-SPACE=LIN-SPACE$, but if it is not then
+$NLIN-SPACE$ is in $PSPACE$, by Savitch's Theorem.
+
+\item
+Compilers must perform the task of deciding whether strings belong to a given
+language defined by a given grammar. Since the worst problems in $LIN-SPACE$
+are
+not known to be solvable in polynomial time, defining languages as CSLs would
+make compilers impractically slow.
+\end{enumerate}
+
+\section{10}
+\begin{enumerate}[a)]
+\item
+
+\end{enumerate}
+\end{document}
